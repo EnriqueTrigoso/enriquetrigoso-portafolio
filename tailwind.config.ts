@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        paragraph: "var(--paragraph)"
+      },
+      fontFamily: {
+        'poppins': ['var(--font-poppins)', 'Arial'],
+        'instrument-serif': ['var(--font-instrument-serif)', 'Arial'],
       },
     },
   },

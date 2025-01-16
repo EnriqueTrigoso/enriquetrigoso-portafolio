@@ -1,0 +1,3 @@
+export const {
+  NEXT_PUBLIC_STRAPI_API_TOKEN, NEXT_PUBLIC_STRAPI_API_URL
+} = process.env;

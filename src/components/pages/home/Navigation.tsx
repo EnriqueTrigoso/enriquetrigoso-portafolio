@@ -1,0 +1,31 @@
+import React from 'react'
+import { useTranslations } from 'next-intl';
+
+const Navigation = () => {
+
+  const t = useTranslations("header");
+
+  return (
+    <div className='absolute top-0 left-0 w-full z-10 py-8'>
+
+      <div className='mx-auto rounded-3xl border border-[#262626] flex gap-8 w-fit px-8 py-4'>
+
+        {t.raw("navigation").map((elem: { title: string, path: string }, index: string) => {
+          return (
+            <p key={index} className='text-paragraph duration-300 hover:text-white '>
+              <a href={elem.path}>
+                {elem.title}
+              </a>
+            </p>
+          )
+        })}
+      </div>
+
+
+
+
+    </div>
+  )
+}
+
+export default Navigation

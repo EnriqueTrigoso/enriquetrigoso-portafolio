@@ -1,0 +1,58 @@
+{
+    "metadata": {
+        "title": "",
+        "description": "",
+        "image": ""
+    },
+    "header": {
+        "navigation": [
+            {
+                "title": "Inicio",
+                "path": "/"
+            },
+            {
+                "title": "Acerca",
+                "path": "#acerca-de-mi"
+            },
+            {
+                "title": "Proyectos",
+                "path": "#acerca-de-mi"
+            },
+            {
+                "title": "Habilidades",
+                "path": "#acerca-de-mi"
+            },
+            {
+                "title": "Contacto",
+                "path": "#acerca-de-mi"
+            }
+        ]
+    },
+    "hero": {
+        "image": {
+            "path": "",
+            "alt": ""
+        },
+        "state": {
+            "available": "Disponible para trabajar",
+            "not-available": "No disponible"
+        },
+        "title": "Enrique Trigoso",
+        "occupation": "Desarrollador Full Stack",
+        "social": {
+            "github": {
+                "url": ""
+            },
+            "facebook": {
+                "url": ""
+            },
+            "linkedin": {
+                "url": ""
+            }
+        },
+        "button": {
+            "text": "Contáctame",
+            "url": ""
+        }
+    }
+}
