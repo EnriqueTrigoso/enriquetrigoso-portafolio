@@ -11,7 +11,7 @@
                 "path": "/"
             },
             {
-                "title": "Acerca",
+                "title": "Sobre mí",
                 "path": "#acerca-de-mi"
             },
             {
@@ -53,6 +53,104 @@
         "button": {
             "text": "Contáctame",
             "url": ""
+        }
+    },
+    "about-me": {
+        "title": "Sobre mí",
+        "description": "Tengo experiencia en el desarrollo de soluciones tecnológicas. He trabajado en una empresa de comparadores de seguros, donde implementé sistemas ERP y desarrollé interfaces web utilizando Next.js. <br></br><br></br>Tengo habilidades en la creación de endpoints y en la optimización de procesos para mejorar la eficiencia. Mi objetivo es ofrecer soluciones prácticas y efectivas que se adapten a las necesidades del usuario."
+    },
+    "projects": {
+        "title": "Mis proyectos",
+        "list": [
+            {
+                "project_name": "B&V Group Import S.A.C.",
+                "images_path": {
+                    "primary": {
+                        "src": "/assets/home/projects/supermarket_1.png",
+                        "alt": ""
+                    },
+                    "secondary": {
+                        "src": "/assets/home/projects/supermarket_2.png",
+                        "alt": ""
+                    }
+                },
+                "path": "/es/projects",
+                "technologies used": [
+                    "CSS Modules"
+                ]
+            },
+            {
+                "project_name": "Age of Z Bot",
+                "images_path": {
+                    "primary": {
+                        "src": "/assets/home/projects/ageofz1.png",
+                        "alt": ""
+                    },
+                    "secondary": {
+                        "src": "/assets/home/projects/ageofz2.png",
+                        "alt": ""
+                    }
+                },
+                "path": "/projects",
+                "technologies used": [
+                    ""
+                ]
+            },
+            {
+                "project_name": "ERP Test",
+                "images_path": {
+                    "primary": {
+                        "src": "/assets/home/projects/erp1.webp",
+                        "alt": ""
+                    },
+                    "secondary": {
+                        "src": "/assets/home/projects/erp2.webp",
+                        "alt": ""
+                    }
+                },
+                "path": "",
+                "technologies used": [
+                    ""
+                ]
+            },
+            {
+                "project_name": "Eva Movil",
+                "images_path": {
+                    "primary": {
+                        "src": "/assets/home/projects/evamovil1.png",
+                        "alt": ""
+                    },
+                    "secondary": {
+                        "src": "/assets/home/projects/evamovil2.png",
+                        "alt": ""
+                    }
+                },
+                "path": "",
+                "technologies used": [
+                    ""
+                ]
+            },
+            {
+                "project_name": "Dota 2 Interface",
+                "images_path": {
+                    "primary": {
+                        "src": "/assets/home/projects/dota2interface_1.png",
+                        "alt": ""
+                    },
+                    "secondary": {
+                        "src": "/assets/home/projects/dota2interface_2.png",
+                        "alt": ""
+                    }
+                },
+                "path": "",
+                "technologies used": [
+                    ""
+                ]
+            }
+        ],
+        "button": {
+            "text": "Ver más",
+            "path": "/proyectos"
         }
     }
 }

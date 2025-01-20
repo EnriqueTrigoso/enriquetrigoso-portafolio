@@ -12,7 +12,7 @@ const Hero = () => {
 
 
     return (
-        <div className='w-full h-screen flex flex-col'>
+        <div className='relative w-full h-screen flex flex-col'>
 
             <div className='flex items-center justify-center content-center flex-row flex-nowrap gap-2.5 h-min overflow-visible p-0 relative w-full'>
                 <div className='flex-1 h-[430px] opacity-[0.44] relative filter grayscale'>
@@ -26,7 +26,7 @@ const Hero = () => {
                     <div className='rounded-full overflow-hidden w-44 h-44 bg-gray-200'>
                         <Image
                             alt='Enrique Trigoso'
-                            src={'/assets/EnriqueTrigoso.png'}
+                            src={'/assets/home/hero/EnriqueTrigoso.png'}
                             width={860}
                             height={964}
                             className="w-full h-full"
@@ -58,7 +58,7 @@ const Hero = () => {
                         <Linkedin />
                     </div>
 
-                    <Button variant="primary" className='rounded-3xl px-5'>
+                    <Button variant="primary">
                         <Send />
                         {t("button.text")}
                     </Button>
