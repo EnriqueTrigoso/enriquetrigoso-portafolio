@@ -1,4 +1,4 @@
-import Navigation from "@/components/pages/home/Navigation";
+import Navigation from "@/components/layout/Navigation";
 
 export default function HomeLayout({
     children,
