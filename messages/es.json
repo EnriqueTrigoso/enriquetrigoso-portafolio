@@ -67,16 +67,22 @@
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/supermarket_1.png",
-                        "alt": ""
+                        "alt": "B&V Group Import S.A.C."
                     },
                     "secondary": {
                         "src": "/assets/home/projects/supermarket_2.png",
-                        "alt": ""
+                        "alt": "B&V Group Import S.A.C."
                     }
                 },
                 "path": "/es/projects",
+                "description": "E-comerce Peruana de autopartes, cuenta con busqueda de productos, pedido de productos via whatsapp, visualizacion de tiendas a través de un mapa.",
                 "technologies used": [
-                    "CSS Modules"
+                    "CSS Modules",
+                    "Nextjs",
+                    "Javascript",
+                    "Redux",
+                    "Supabase",
+                    "Mapbox"
                 ]
             },
             {
@@ -84,31 +90,33 @@
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/ageofz1.png",
-                        "alt": ""
+                        "alt": "Age of Z Bot"
                     },
                     "secondary": {
                         "src": "/assets/home/projects/ageofz2.png",
-                        "alt": ""
+                        "alt": "Age of Z Bot"
                     }
                 },
                 "path": "/projects",
+                "description": "",
                 "technologies used": [
                     ""
                 ]
             },
             {
-                "project_name": "ERP Test",
+                "project_name": "ERP",
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/erp1.webp",
-                        "alt": ""
+                        "alt": "ERP"
                     },
                     "secondary": {
                         "src": "/assets/home/projects/erp2.webp",
-                        "alt": ""
+                        "alt": "ERP"
                     }
                 },
                 "path": "",
+                "description": "",
                 "technologies used": [
                     ""
                 ]
@@ -126,6 +134,7 @@
                     }
                 },
                 "path": "",
+                "description": "",
                 "technologies used": [
                     ""
                 ]
@@ -143,6 +152,7 @@
                     }
                 },
                 "path": "",
+                "description": "",
                 "technologies used": [
                     ""
                 ]
@@ -152,5 +162,49 @@
             "text": "Ver más",
             "path": "/proyectos"
         }
+    },
+    "skills": {
+        "title": "Habilidades",
+        "technologies_title": "Tecnologías",
+        "technologies": [
+            "React",
+            "Typescript",
+            "NextJS",
+            "Zustand",
+            "Redux",
+            "Axios",
+            "Tailwind CSS",
+            "Yup",
+            "Tanstack Query",
+            "Tanstack Table",
+            "Git",
+            "SQL",
+            "Django Rest Framework",
+            "Python",
+            "PyQt6",
+            "Networkx",
+            "OpenCV",
+            "Pandas",
+            "Pytesseract",
+            "Autohotkey"
+        ],
+        "tools_title": "Herramientas",
+        "tools": [
+            "Docker",
+            "Postman",
+            "Figma",
+            "Datagrip",
+            "DBeaver",
+            "Trello",
+            "Visual Studio Code",
+            "Jupyter Notebook"
+        ],
+        "methodologies_title": "Metodologías",
+        "methodologies": [
+            "POO",
+            "Atomic Design",
+            "Ux/Ui Desing",
+            "Scrum"
+        ]
     }
 }

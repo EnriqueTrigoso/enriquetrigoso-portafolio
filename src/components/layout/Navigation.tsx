@@ -9,8 +9,14 @@ const Navigation = () => {
   return (
     <div className='absolute top-0 left-0 w-full z-10 py-8'>
 
-      <div className='relative'>
-        <div className='mx-auto rounded-3xl border border-[#262626] flex gap-8 w-fit px-8 py-4'>
+
+
+      <div className='container flex justify-between'>
+
+        <div></div>
+        
+
+        <div className='rounded-3xl border border-[#262626] flex gap-8 w-fit px-8 py-4'>
 
           {t.raw("navigation").map((elem: { title: string, path: string }, index: string) => {
             return (
@@ -23,16 +29,13 @@ const Navigation = () => {
           })}
         </div>
 
-        <div className='mx-auto absolute top-0 h-full w-full flex items-center justify-end px-6 '>
-          <div className='max-w-[1300px] w-full flex justify-end items-center'>
+        <div className='flex items-center justify-end'>
+          <div className='flex justify-end items-center'>
             <LocaleSwitcher className='' />
-
           </div>
         </div>
+
       </div>
-
-
-
 
     </div>
   )

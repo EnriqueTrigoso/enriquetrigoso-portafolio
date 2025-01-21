@@ -9,7 +9,7 @@ const AboutMe = () => {
 
 
     return (
-        <div className='bg-black py-12'>
+        <section className='bg-black py-12'>
             <div className='container'>
                 <div className='flex gap-6'>
 
@@ -38,7 +38,7 @@ const AboutMe = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }
 

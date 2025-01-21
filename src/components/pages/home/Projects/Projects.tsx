@@ -7,7 +7,7 @@ import {
     CarouselItem,
 } from "@/components/ui/carousel"
 import Card from './Card'
-// import AutoScroll from 'embla-carousel-auto-scroll'
+import AutoScroll from 'embla-carousel-auto-scroll'
 import { useEffect, useState } from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import { type CarouselApi } from "@/components/ui/carousel"
@@ -62,15 +62,13 @@ const Projects = () => {
                 <Carousel
                     setApi={setApi}
                     opts={options}
-
-                // plugins={[
-                //     AutoScroll({
-                //         speed: speed,
-                //     }),
-                // ]}
-
-                // onMouseEnter={(event) => console.log(event)}
-                // onMouseLeave={() => } 
+                    plugins={[
+                        AutoScroll({
+                            speed: 1,
+                        }),
+                    ]}
+                    onMouseEnter={(event) => console.log(event)}
+                    onMouseLeave={(event) => console.log(event)}
                 >
                     <CarouselContent>
 
@@ -87,10 +85,14 @@ const Projects = () => {
                     </CarouselContent>
                 </Carousel>
 
-                <Button variant={'primary'} className='mx-auto'>
-                    {t("button.text")}
-                    <ArrowRight />
-                </Button>
+                <div className='flex justify-center mt-10'>
+                    <Button variant={'primary'}>
+                        {t("button.text")}
+                        <ArrowRight />
+                    </Button>
+                </div>
+
+
 
             </div>
 

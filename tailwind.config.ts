@@ -21,6 +21,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        tertiary: "var(--tertiary)",
+        fourty: "var(--fourty)",
+        title: "var(--title)",
         paragraph: "var(--paragraph)"
       },
       fontFamily: {

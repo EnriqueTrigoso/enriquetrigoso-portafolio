@@ -12,12 +12,12 @@ const Hero = () => {
 
 
     return (
-        <div className='relative w-full h-screen flex flex-col'>
+        <section className='relative w-full h-screen flex flex-col'>
 
             <div className='flex items-center justify-center content-center flex-row flex-nowrap gap-2.5 h-min overflow-visible p-0 relative w-full'>
                 <div className='flex-1 h-[430px] opacity-[0.44] relative filter grayscale'>
                     <video autoPlay loop muted playsInline className='cursor-auto w-full h-full rounded-none block object-cover bg-transparent object-center'>
-                        <source src="assets/hero.mp4" type="video/mp4" />
+                        <source src="assets/home/hero/hero.mp4" type="video/mp4" />
                     </video>
                 </div>
 
@@ -78,7 +78,7 @@ const Hero = () => {
 
 
 
-        </div>
+        </section>
     )
 }
 
