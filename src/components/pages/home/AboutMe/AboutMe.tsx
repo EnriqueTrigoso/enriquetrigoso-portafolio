@@ -2,14 +2,14 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 import TitleLines from '@/components/ui/title-lines'
+import { Eye, FileDown } from 'lucide-react'
 
 const AboutMe = () => {
 
     const t = useTranslations("about-me")
 
-
     return (
-        <section className='bg-black py-12'>
+        <section className='py-12' id='about-me'>
             <div className='container'>
                 <div className='flex gap-6'>
 
@@ -34,6 +34,24 @@ const AboutMe = () => {
                                 br: () => <br />
                             })}
                         </p>
+
+                        <div className='mt-6 float-end'>
+                            <p className='text-paragraph italic text-center'>Curriculum Vitae</p>
+
+                            <div className='flex gap-2 justify-end mt-2'>
+
+                                <button className='px-2 py-2 border border-paragraph rounded-lg flex gap-2'>
+                                    <Eye />
+                                    <p>Ver</p>
+                                </button>
+
+                                <button className='px-2 py-2 border border-paragraph rounded-lg flex gap-2'>
+                                    <FileDown />
+                                    <p>Descargar</p>
+                                </button>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,23 +8,23 @@
         "navigation": [
             {
                 "title": "Inicio",
-                "path": "/"
+                "path": "hero"
             },
             {
                 "title": "Sobre mí",
-                "path": "#acerca-de-mi"
+                "path": "about-me"
             },
             {
                 "title": "Proyectos",
-                "path": "#acerca-de-mi"
+                "path": "projects"
             },
             {
                 "title": "Habilidades",
-                "path": "#acerca-de-mi"
+                "path": "skills"
             },
             {
                 "title": "Contacto",
-                "path": "#acerca-de-mi"
+                "path": "contact"
             }
         ]
     },
@@ -57,7 +57,7 @@
     },
     "about-me": {
         "title": "Sobre mí",
-        "description": "Tengo experiencia en el desarrollo de soluciones tecnológicas. He trabajado en una empresa de comparadores de seguros, donde implementé sistemas ERP y desarrollé interfaces web utilizando Next.js. <br></br><br></br>Tengo habilidades en la creación de endpoints y en la optimización de procesos para mejorar la eficiencia. Mi objetivo es ofrecer soluciones prácticas y efectivas que se adapten a las necesidades del usuario."
+        "description": "Tengo experiencia en el desarrollo de soluciones tecnológicas. He trabajado en una empresa de comparadores de seguros donde implementé su sistema ERP y desarrollé interfaces web de comparadores utilizando Next.js. <br></br><br></br>Tengo habilidades en la creación de endpoints y en la optimización de procesos para mejorar la eficiencia. Mi objetivo es ofrecer soluciones prácticas y efectivas que se adapten a las necesidades del usuario."
     },
     "projects": {
         "title": "Mis proyectos",
@@ -75,14 +75,49 @@
                     }
                 },
                 "path": "/es/projects",
-                "description": "E-comerce Peruana de autopartes, cuenta con busqueda de productos, pedido de productos via whatsapp, visualizacion de tiendas a través de un mapa.",
-                "technologies used": [
-                    "CSS Modules",
-                    "Nextjs",
-                    "Javascript",
-                    "Redux",
-                    "Supabase",
-                    "Mapbox"
+                "description": "E-comerce de empresa peruana dedicada a la venta de repuestos y accesorios para autos. <br><br/>Los productos estan organizados por multiples categorias, cuentan con descripcion individual e imagenes referenciales, se puede realizar busqueda de productos, almacenar en carrito de compras y redireccion del pedido a whatsapp para concretar la compra mediante ese medio.<br><br/>",
+                "buttons": {
+                    "live_demo": {
+                        "title": "Ver Demo",
+                        "url": "https://supermarket-project-nu.vercel.app/"
+                    },
+                    "repository": {
+                        "title": "Github",
+                        "url": "https://github.com/EnriqueTrigoso/supermarket-project/"
+                    }
+                },
+                "key_features": [
+                    "Diseño moderno y elegante.",
+                    "Interfaz Intuitiva.",
+                    "Segmentada y ordenada.",
+                    "Vista a detalle del producto, descripcion e imagenes.",
+                    "Localizador de tiendas, mediante un mapa se puede tener mejor referencia de los locales."
+                ],
+                "technologies_used": [
+                    {
+                        "name": "Nextjs",
+                        "type": "framework"
+                    },
+                    {
+                        "name": "Javascript",
+                        "type": "languaje"
+                    },
+                    {
+                        "name": "CSS Modules",
+                        "type": "methodology"
+                    },
+                    {
+                        "name": "Redux",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Supabase",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Mapbox",
+                        "type": "library"
+                    }
                 ]
             },
             {
@@ -97,10 +132,61 @@
                         "alt": "Age of Z Bot"
                     }
                 },
-                "path": "/projects",
-                "description": "",
-                "technologies used": [
-                    ""
+                "path": "/es/projects",
+                "description": "Un bot para la automatizacion de acciones y en multiples cuentas a la vez mediante clicks invisibles; esto gracias a deteccion de imagenes, ocr y tomando decisiones en base a los datos recopilados. ",
+                "buttons": {
+                    "live_demo": {
+                        "title": "Ver Demo",
+                        "url": ""
+                    },
+                    "repository": {
+                        "title": "Github",
+                        "url": ""
+                    }
+                },
+                "key_features": [
+                    "Interfaz Intuitiva, está dividido por pestañas y ventanas segun funcionalidad y las de mayor necesidad se visualizan primero",
+                    "Guarda informacion importante sobre estadisticas, recursos, soldados",
+                    "Multi tarea, maneja hasta 20 instancias en simultaneo",
+                    "Personalizable, se puede configurar todas las acciones posibles de manera independiente y segun la cuenta de juego."
+                ],
+                "technologies_used": [
+                    {
+                        "name": "Python",
+                        "type": "languaje"
+                    },
+                    {
+                        "name": "OpenCV",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Pandas",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Pytesseract",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Pyqt6",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Threading",
+                        "type": "library"
+                    },
+                    {
+                        "name": "PyAutoGUI",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Pywin32",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Networkx",
+                        "type": "library"
+                    }
                 ]
             },
             {
@@ -115,10 +201,84 @@
                         "alt": "ERP"
                     }
                 },
-                "path": "",
-                "description": "",
-                "technologies used": [
-                    ""
+                "path": "/es/projects",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel aliquet diam. In posuere cursus sem. Sed pellentesque, ipsum ac scelerisque efficitur, est eros commodo mi, sed lacinia magna magna et elit. Vestibulum ornare, lacus in sollicitudin convallis, arcu nisl efficitur urna, sit amet tempus justo ex quis leo. Pellentesque pharetra rhoncus augue, sit amet scelerisque dui gravida vitae. Quisque iaculis id lacus ac maximus. Ut eu diam at massa consectetur laoreet. Ut sed rutrum dolor. Nam porttitor purus ut convallis scelerisque. Praesent aliquet massa nec est molestie, sit amet vulputate nibh lobortis. Cras bibendum tempor nisi vitae laoreet. Ut.",
+                "buttons": {
+                    "live_demo": {
+                        "title": "Ver Demo",
+                        "url": ""
+                    },
+                    "repository": {
+                        "title": "Github",
+                        "url": ""
+                    }
+                },
+                "key_features": [
+                    "Automatización de Procesos",
+                    "Base de Datos Centralizada",
+                    "Interfaz Intuitiva",
+                    "Funcionalidad en Tiempo Real",
+                    "Análisis y Reportes",
+                    "Adaptabilidad",
+                    "Soporte para Toma de Decisiones"
+                ],
+                "technologies_used": [
+                    {
+                        "name": "Nextjs",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Typescript",
+                        "type": "language"
+                    },
+                    {
+                        "name": "Tanstack Query",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Tanstack Table",
+                        "type": "library"
+                    },
+                    {
+                        "name": "MUI",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Axios",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Dayjs",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Framer Motion",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Js-cookie",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Resend",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Zod",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Recharts",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Lodash",
+                        "type": "library"
+                    }
                 ]
             },
             {
@@ -133,10 +293,44 @@
                         "alt": ""
                     }
                 },
-                "path": "",
-                "description": "",
-                "technologies used": [
-                    ""
+                "path": "/es/projects",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel aliquet diam. In posuere cursus sem. Sed pellentesque, ipsum ac scelerisque efficitur, est eros commodo mi, sed lacinia magna magna et elit. Vestibulum ornare, lacus in sollicitudin convallis, arcu nisl efficitur urna, sit amet tempus justo ex quis leo. Pellentesque pharetra rhoncus augue, sit amet scelerisque dui gravida vitae. Quisque iaculis id lacus ac maximus. Ut eu diam at massa consectetur laoreet. Ut sed rutrum dolor. Nam porttitor purus ut convallis scelerisque. Praesent aliquet massa nec est molestie, sit amet vulputate nibh lobortis. Cras bibendum tempor nisi vitae laoreet. Ut.",
+                "buttons": {
+                    "live_demo": {
+                        "title": "Ver Demo",
+                        "url": ""
+                    },
+                    "repository": {
+                        "title": "Github",
+                        "url": ""
+                    }
+                },
+                "key_features": [],
+                "technologies_used": [
+                    {
+                        "name": "Nextjs",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Tailwind CSS",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Embla-carousel",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Remark",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Lucide",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Fetch",
+                        "type": "library"
+                    }
                 ]
             },
             {
@@ -151,16 +345,46 @@
                         "alt": ""
                     }
                 },
-                "path": "",
-                "description": "",
-                "technologies used": [
-                    ""
+                "path": "/es/projects",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel aliquet diam. In posuere cursus sem. Sed pellentesque, ipsum ac scelerisque efficitur, est eros commodo mi, sed lacinia magna magna et elit. Vestibulum ornare, lacus in sollicitudin convallis, arcu nisl efficitur urna, sit amet tempus justo ex quis leo. Pellentesque pharetra rhoncus augue, sit amet scelerisque dui gravida vitae. Quisque iaculis id lacus ac maximus. Ut eu diam at massa consectetur laoreet. Ut sed rutrum dolor. Nam porttitor purus ut convallis scelerisque. Praesent aliquet massa nec est molestie, sit amet vulputate nibh lobortis. Cras bibendum tempor nisi vitae laoreet. Ut.",
+                "buttons": {
+                    "live_demo": {
+                        "title": "Ver Demo",
+                        "url": ""
+                    },
+                    "repository": {
+                        "title": "Github",
+                        "url": ""
+                    }
+                },
+                "key_features": [],
+                "technologies_used": [
+                    {
+                        "name": "Autohotkey",
+                        "type": "languaje"
+                    },
+                    {
+                        "name": "Gdip",
+                        "type": "library"
+                    },
+                    {
+                        "name": "Windrag",
+                        "type": "library"
+                    }
                 ]
             }
         ],
         "button": {
             "text": "Ver más",
-            "path": "/proyectos"
+            "path": "/es/projects"
+        },
+        "project_detail": {
+            "technology_title": "Tecnologías usadas",
+            "key_features_title": "Características principales",
+            "buttons": [
+                "Ver Demo",
+                "Github"
+            ]
         }
     },
     "skills": {
@@ -204,7 +428,9 @@
             "POO",
             "Atomic Design",
             "Ux/Ui Desing",
-            "Scrum"
+            "Scrum",
+            "CSS Modules",
+            "Clean Code"
         ]
     }
 }

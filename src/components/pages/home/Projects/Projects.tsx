@@ -13,6 +13,7 @@ import { EmblaOptionsType } from 'embla-carousel'
 import { type CarouselApi } from "@/components/ui/carousel"
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export interface Path {
     src: string;
@@ -52,7 +53,7 @@ const Projects = () => {
     }, [api])
 
     return (
-        <section className='p-8'>
+        <section className='p-8' id='projects'>
             <div className='container'>
 
                 <TitleLines className="mb-6">
@@ -86,10 +87,12 @@ const Projects = () => {
                 </Carousel>
 
                 <div className='flex justify-center mt-10'>
-                    <Button variant={'primary'}>
-                        {t("button.text")}
-                        <ArrowRight />
-                    </Button>
+                    <Link href={t("button.path")}>
+                        <Button variant='primary'>
+                            {t("button.text")}
+                            <ArrowRight />
+                        </Button>
+                    </Link>
                 </div>
 
 

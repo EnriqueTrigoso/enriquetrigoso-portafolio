@@ -11,7 +11,7 @@ const Skills = () => {
 
 
     return (
-        <section className='py-10'>
+        <section className='py-10' id='skills'>
 
             <div className='container'>
                 <TitleLines>
@@ -88,12 +88,12 @@ const Skills = () => {
                         {/* Methodologies */}
                         <div>
 
-                            <div className='flex gap-6 flex-wrap justify-center'>
+                            <div className='flex gap-6 justify-center'>
                                 <Network />
                                 <h2 className='text-base mb-4 text-center'>{t("methodologies_title")}</h2>
                             </div>
 
-                            <div className='flex gap-2 justify-center'>
+                            <div className='flex gap-2 flex-wrap justify-center'>
                                 {
                                     t.raw('methodologies').map((elem: string, index: string) => {
                                         return (

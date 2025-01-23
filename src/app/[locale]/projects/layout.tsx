@@ -1,13 +1,19 @@
-import Navigation from "@/components/layout/Navigation";
+import Background from "@/components/layout/Background";
+import LocaleSwitcher from "@/components/layout/LocaleSwitcher";
 
-export default function HomeLayout({
+export default function ProjectLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
     return (
         <>
-            <Navigation />
+            <Background />
+            <div className="py-6">
+                <div className="container">
+                    <LocaleSwitcher />
+                </div>
+            </div>
             {children}
         </>
     );

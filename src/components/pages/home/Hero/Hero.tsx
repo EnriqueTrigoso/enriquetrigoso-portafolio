@@ -1,6 +1,8 @@
+'use client'
 import { Button } from '@/components/ui/button';
 // import Rays from '@/components/ui/rays'
 import Sky from '@/components/ui/sky'
+import { goTo } from '@/lib/utils';
 import { ChevronDown, Facebook, Github, Linkedin, Send } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -12,8 +14,7 @@ const Hero = () => {
 
 
     return (
-        <section className='relative w-full h-screen flex flex-col'>
-
+        <section className='relative w-full h-screen flex flex-col' id='hero'>
             <div className='flex items-center justify-center content-center flex-row flex-nowrap gap-2.5 h-min overflow-visible p-0 relative w-full'>
                 <div className='flex-1 h-[430px] opacity-[0.44] relative filter grayscale'>
                     <video autoPlay loop muted playsInline className='cursor-auto w-full h-full rounded-none block object-cover bg-transparent object-center'>
@@ -61,6 +62,9 @@ const Hero = () => {
                     <Button variant="primary">
                         <Send />
                         {t("button.text")}
+                        <div className="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
+                            <div className="relative h-full w-8 bg-white/30"></div>
+                        </div>
                     </Button>
                 </div>
 
@@ -71,7 +75,9 @@ const Hero = () => {
             </div>
 
             <div className='absolute w-full bottom-5 flex justify-center items-center'>
-                <a href="" className='animate-bounce'>
+                <a className='animate-bounce' onClick={() => {
+                    goTo('about-me')
+                }}>
                     <ChevronDown width={32} height={32} />
                 </a>
             </div>

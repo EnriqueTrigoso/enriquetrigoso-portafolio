@@ -8,7 +8,7 @@ export default function HomeLayout({
 }) {
     return (
         <>
-            <Navigation />
+            <Navigation position='absolute' />
             {children}
         </>
     );
