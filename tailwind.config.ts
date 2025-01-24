@@ -26,7 +26,9 @@ export default {
         tertiary: "var(--tertiary)",
         fourty: "var(--fourty)",
         title: "var(--title)",
-        paragraph: "var(--paragraph)"
+        paragraph: "var(--paragraph)",
+
+        border: "var(--border-color)"
       },
       fontFamily: {
         'poppins': ['var(--font-poppins)', 'Arial'],

@@ -1,3 +1,4 @@
+import { BorderTrail } from '@/components/ui/border-trail';
 import { Button } from '@/components/ui/button';
 import RichText from '@/components/ui/richtext';
 import { CodeXml, Github, Package, SquareArrowOutUpRight, Star } from 'lucide-react';
@@ -130,7 +131,13 @@ const Project = () => {
                     </div>
 
                     <div className='mt-6 bg-white/[0.02] backdrop-blur-xl rounded-2xl p-8 border border-white/10 space-y-4 hover:border-white/20 transition-colors duration-300 group md:space-y-4'>
-
+                      <BorderTrail
+                        style={{
+                          boxShadow:
+                            '0px 0px 60px 30px rgb(255 255 255 / 50%), 0 0 100px 60px rgb(0 0 0 / 50%), 0 0 140px 90px rgb(0 0 0 / 50%)',
+                        }}
+                        size={200}
+                      />
                       <h3 className='text-xl flex items-center gap-2 font-bold'>
                         <Star className='w-5 h-5 text-yellow-400 group-hover:rotate-[20deg] transition-transform duration-300' />
                         {t("project_detail.key_features_title")}

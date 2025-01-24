@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import TitleLines from '@/components/ui/title-lines'
 import { Eye, FileDown } from 'lucide-react'
+import { BorderTrail } from '@/components/ui/border-trail'
 
 const AboutMe = () => {
 
@@ -13,7 +14,14 @@ const AboutMe = () => {
             <div className='container'>
                 <div className='flex gap-6'>
 
-                    <div className='bg-[#141414] p-2 rounded-xl w-[600px]'>
+                    <div className='relative bg-border p-2 rounded-xl w-[600px]'>
+                        <BorderTrail
+                            style={{
+                                boxShadow:
+                                    '0px 0px 60px 30px rgb(255 255 255 / 50%), 0 0 100px 60px rgb(0 0 0 / 50%), 0 0 140px 90px rgb(0 0 0 / 50%)',
+                            }}
+                            size={200}
+                        />
                         <Image
                             alt={"Enrique Trigoso"}
                             width={1300}

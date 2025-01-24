@@ -14,22 +14,8 @@ import { type CarouselApi } from "@/components/ui/carousel"
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { Project } from '@/lib/types'
 
-export interface Path {
-    src: string;
-    alt: string;
-}
-
-export interface ImagesPath {
-    primary: Path;
-    secondary: Path;
-}
-
-export interface Project {
-    project_name: string;
-    images_path: ImagesPath;
-    path: string;
-}
 
 const options: EmblaOptionsType = {
     align: "start",
@@ -74,10 +60,10 @@ const Projects = () => {
                     <CarouselContent>
 
                         {
-                            t.raw("list").map((elem: Project, index: string) => {
+                            t.raw("list").map((project: Project, index: string) => {
                                 return (
                                     <CarouselItem className="basis-1/3 pl-10" key={index}>
-                                        <Card image={elem.images_path} project_name={elem.project_name} path={elem.path} />
+                                        <Card project={project} />
                                     </CarouselItem>
                                 )
                             })

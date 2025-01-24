@@ -64,6 +64,7 @@
         "list": [
             {
                 "project_name": "B&V Group Import S.A.C.",
+                "id": "importgroup",
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/supermarket_1.png",
@@ -84,6 +85,10 @@
                     "repository": {
                         "title": "Github",
                         "url": "https://github.com/EnriqueTrigoso/supermarket-project/"
+                    },
+                    "see_details": {
+                        "title": "Ver Detalles",
+                        "url": "/es/projects#importgroup"
                     }
                 },
                 "key_features": [
@@ -122,6 +127,7 @@
             },
             {
                 "project_name": "Age of Z Bot",
+                "id": "ageofzbot",
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/ageofz1.png",
@@ -142,6 +148,10 @@
                     "repository": {
                         "title": "Github",
                         "url": ""
+                    },
+                    "see_details": {
+                        "title": "Ver Detalles",
+                        "url": "/es/projects#ageofzbot"
                     }
                 },
                 "key_features": [
@@ -191,6 +201,7 @@
             },
             {
                 "project_name": "ERP",
+                "id": "erp",
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/erp1.webp",
@@ -211,6 +222,10 @@
                     "repository": {
                         "title": "Github",
                         "url": ""
+                    },
+                    "see_details": {
+                        "title": "Ver Detalles",
+                        "url": "/es/projects#erp"
                     }
                 },
                 "key_features": [
@@ -283,6 +298,7 @@
             },
             {
                 "project_name": "Eva Movil",
+                "id": "evamovil",
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/evamovil1.png",
@@ -303,6 +319,10 @@
                     "repository": {
                         "title": "Github",
                         "url": ""
+                    },
+                    "see_details": {
+                        "title": "Ver Detalles",
+                        "url": "/es/projects#evamovil"
                     }
                 },
                 "key_features": [],
@@ -335,6 +355,7 @@
             },
             {
                 "project_name": "Dota 2 Interface",
+                "id": "dota2interface",
                 "images_path": {
                     "primary": {
                         "src": "/assets/home/projects/dota2interface_1.png",
@@ -355,6 +376,10 @@
                     "repository": {
                         "title": "Github",
                         "url": ""
+                    },
+                    "see_details": {
+                        "title": "Ver Detalles",
+                        "url": "/es/projects#dota2interface"
                     }
                 },
                 "key_features": [],
@@ -432,5 +457,57 @@
             "CSS Modules",
             "Clean Code"
         ]
+    },
+    "contact": {
+        "subtitle": "Mantente conectado",
+        "title": "¡Trabajemos juntos!",
+        "data": {
+            "phone": {
+                "title": "Teléfono",
+                "number": "+51 990 354 692"
+            },
+            "email": {
+                "title": "Correo",
+                "account": "enriquetrigosot@gmail.com"
+            },
+            "address": {
+                "title": "Dirección",
+                "locale": "Jr. Las Calendulas - Urb. Las Flores - S.J.L - Lima/Perú"
+            }
+        },
+        "inputs": {
+            "name": {
+                "placeholder": "Nombre",
+                "error_msg": "Ingrese un nombre válido"
+            },
+            "email": {
+                "placeholder": "Correo",
+                "error_msg": "Ingrese un correo valido"
+            },
+            "phone": {
+                "placeholder": "Teléfono",
+                "error_msg": "Ingrese un teléfono válido"
+            },
+            "service": {
+                "placeholder": "Servicio",
+                "elements": [
+                    "Desarrollo Frontend",
+                    "Desarrollo Backend",
+                    "Desarrollo Fullstack"
+                ]
+            },
+            "message": {
+                "placeholder": "Escribe tu mensaje",
+                "error_msg": "El mensaje es muy corto"
+            }
+        },
+        "button_text": "Enviar mensaje",
+        "modal": {
+            "title": "",
+            "message": ""
+        }
+    },
+    "footer": {
+        "title": "Programado por Enrique Trigoso"
     }
 }

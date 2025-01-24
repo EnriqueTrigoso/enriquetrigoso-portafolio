@@ -9,29 +9,28 @@ const Skills = () => {
 
     const t = useTranslations('skills')
 
-
     return (
         <section className='py-10' id='skills'>
 
             <div className='container'>
-                <TitleLines>
+
+                <TitleLines className='mb-8'>
                     {t('title')}
                 </TitleLines>
 
-
                 <div>
 
-                    <div className='flex gap-8'>
+                    <div className='flex flex-col gap-10'>
 
                         {/* Technologies */}
                         <div>
 
-                            <div className='flex gap-2 justify-center'>
+                            <div className='flex gap-2 justify-start'>
                                 <Cpu />
                                 <h2 className='text-base mb-4 text-center'>{t("technologies_title")}</h2>
                             </div>
 
-                            <div className='flex gap-6 flex-wrap justify-center'>
+                            <div className='flex gap-6 flex-wrap justify-start'>
                                 {
                                     t.raw("technologies").map((technology: string, index: string) => {
 
@@ -57,12 +56,12 @@ const Skills = () => {
 
                         {/* Tools */}
                         <div>
-                            <div className='flex gap-2 justify-center'>
+                            <div className='flex gap-2 justify-start'>
                                 <Wrench />
                                 <h2 className='text-base mb-4 text-center'>{t("tools_title")}</h2>
                             </div>
 
-                            <div className='flex gap-6 flex-wrap justify-center'>
+                            <div className='flex gap-6 flex-wrap justify-start'>
                                 {
                                     t.raw("tools").map((technology: string, index: string) => {
 
@@ -88,12 +87,12 @@ const Skills = () => {
                         {/* Methodologies */}
                         <div>
 
-                            <div className='flex gap-6 justify-center'>
+                            <div className='flex gap-6 justify-start'>
                                 <Network />
                                 <h2 className='text-base mb-4 text-center'>{t("methodologies_title")}</h2>
                             </div>
 
-                            <div className='flex gap-2 flex-wrap justify-center'>
+                            <div className='flex gap-2 flex-wrap justify-start'>
                                 {
                                     t.raw('methodologies').map((elem: string, index: string) => {
                                         return (
@@ -117,4 +116,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default Skills;
