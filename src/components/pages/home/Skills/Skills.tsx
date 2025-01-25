@@ -37,7 +37,7 @@ const Skills = () => {
                                         return (
                                             <div key={index} className='w-20 h-28 flex flex-col items-center gap-1'>
 
-                                                <div className='relative w-20 h-20 bg-white rounded-xl flex items-center justify-center'>
+                                                <div className='relative w-20 h-20 bg-[#2b2d2e] rounded-xl flex items-center justify-center'>
                                                     <Image
                                                         src={skills_icons[technology]}
                                                         alt='technology'
@@ -68,7 +68,7 @@ const Skills = () => {
                                         return (
                                             <div key={index} className='w-20 h-28 flex flex-col items-center gap-1'>
 
-                                                <div className='relative w-20 h-20 bg-white rounded-xl overflow-hidden p-1 flex items-center justify-center'>
+                                                <div className='relative w-20 h-20 bg-[#2b2d2e] rounded-xl overflow-hidden p-1 flex items-center justify-center'>
                                                     <Image
                                                         src={skills_icons[technology]}
                                                         alt='technology'
@@ -96,8 +96,8 @@ const Skills = () => {
                                 {
                                     t.raw('methodologies').map((elem: string, index: string) => {
                                         return (
-                                            <div key={index} className='px-2 py-1 bg-white rounded-lg w-20 h-20 flex items-center justify-center'>
-                                                <p className='text-black font-instrument-serif text-xl font-medium text-center pointer-events-none select-none'>{elem}</p>
+                                            <div key={index} className='px-2 py-1 bg-[#2b2d2e] rounded-lg w-20 h-20 flex items-center justify-center'>
+                                                <p className='text-paragraph font-instrument-serif text-xl font-medium text-center pointer-events-none select-none'>{elem}</p>
                                             </div>
                                         )
                                     })
