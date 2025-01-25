@@ -4,6 +4,7 @@ import React from 'react'
 import TitleLines from '@/components/ui/title-lines'
 import { Eye, FileDown } from 'lucide-react'
 import { BorderTrail } from '@/components/ui/border-trail'
+import { Button } from '@/components/ui/button'
 
 const AboutMe = () => {
 
@@ -44,19 +45,18 @@ const AboutMe = () => {
                         </p>
 
                         <div className='mt-6 float-end'>
-                            <p className='text-paragraph italic text-center'>Curriculum Vitae</p>
 
-                            <div className='flex gap-2 justify-end mt-2'>
+                            <div className='flex gap-4 justify-end mt-2'>
 
-                                <button className='px-2 py-2 border border-paragraph rounded-lg flex gap-2'>
+                                <Button>
                                     <Eye />
-                                    <p>Ver</p>
-                                </button>
+                                    <p>{t("buttons.see_cv.text")}</p>
+                                </Button>
 
-                                <button className='px-2 py-2 border border-paragraph rounded-lg flex gap-2'>
+                                <Button>
                                     <FileDown />
-                                    <p>Descargar</p>
-                                </button>
+                                    <p>{t("buttons.download_cv.text")}</p>
+                                </Button>
                             </div>
 
                         </div>

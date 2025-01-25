@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "title": "",
+        "title": "Portafolio - Enrique Trigoso",
         "description": "",
         "image": ""
     },
@@ -41,13 +41,16 @@
         "occupation": "Desarrollador Full Stack",
         "social": {
             "github": {
-                "url": ""
+                "url": "https://github.com/EnriqueTrigoso"
             },
             "facebook": {
-                "url": ""
+                "url": "https://www.facebook.com/enrique.trigosotipula"
             },
             "linkedin": {
-                "url": ""
+                "url": "www.linkedin.com/in/enrique-trigoso-53122b295"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/enriquett95/"
             }
         },
         "button": {
@@ -57,7 +60,17 @@
     },
     "about-me": {
         "title": "Sobre mí",
-        "description": "Tengo experiencia en el desarrollo de soluciones tecnológicas. He trabajado en una empresa de comparadores de seguros donde implementé su sistema ERP y desarrollé interfaces web de comparadores utilizando Next.js. <br></br><br></br>Tengo habilidades en la creación de endpoints y en la optimización de procesos para mejorar la eficiencia. Mi objetivo es ofrecer soluciones prácticas y efectivas que se adapten a las necesidades del usuario."
+        "description": "Tengo experiencia en el desarrollo de soluciones tecnológicas. He trabajado en una empresa de comparadores de seguros donde implementé su sistema ERP y desarrollé interfaces web de comparadores utilizando Next.js. <br></br><br></br>Tengo habilidades en la creación de endpoints y en la optimización de procesos para mejorar la eficiencia. Mi objetivo es ofrecer soluciones prácticas y efectivas que se adapten a las necesidades del usuario.",
+        "buttons": {
+            "see_cv": {
+                "text": "Ver CV",
+                "path": ""
+            },
+            "download_cv": {
+                "text": "Descargar CV",
+                "path": ""
+            }
+        }
     },
     "projects": {
         "title": "Mis proyectos",
@@ -417,12 +430,12 @@
         "technologies_title": "Tecnologías",
         "technologies": [
             "React",
-            "Typescript",
             "NextJS",
+            "Typescript",
+            "Tailwind CSS",
             "Zustand",
             "Redux",
             "Axios",
-            "Tailwind CSS",
             "Yup",
             "Tanstack Query",
             "Tanstack Table",
@@ -439,22 +452,22 @@
         ],
         "tools_title": "Herramientas",
         "tools": [
-            "Docker",
             "Postman",
+            "Docker",
             "Figma",
+            "Trello",
             "Datagrip",
             "DBeaver",
-            "Trello",
             "Visual Studio Code",
             "Jupyter Notebook"
         ],
         "methodologies_title": "Metodologías",
         "methodologies": [
-            "POO",
             "Atomic Design",
             "Ux/Ui Desing",
             "Scrum",
             "CSS Modules",
+            "POO",
             "Clean Code"
         ]
     },
