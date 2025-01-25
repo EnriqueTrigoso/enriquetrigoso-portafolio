@@ -6,15 +6,12 @@ import { cn, goTo } from '@/lib/utils';
 import { ChevronDown, Facebook, Github, Instagram, Linkedin, Send } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useState } from 'react';
 
+const available : boolean = true
 
 const Hero = () => {
 
     const t = useTranslations("hero");
-
-    const [available, setAvailable] = useState(true)
-
 
     return (
         <section className='relative w-full h-screen flex flex-col' id='hero'>
