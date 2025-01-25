@@ -2,15 +2,18 @@
 import { Button } from '@/components/ui/button';
 // import Rays from '@/components/ui/rays'
 import Sky from '@/components/ui/sky'
-import { goTo } from '@/lib/utils';
-import { ChevronDown, Facebook, Github, Linkedin, Send } from 'lucide-react';
+import { cn, goTo } from '@/lib/utils';
+import { ChevronDown, Facebook, Github, Instagram, Linkedin, Send } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { useState } from 'react';
 
 
 const Hero = () => {
 
     const t = useTranslations("hero");
+
+    const [available, setAvailable] = useState(true)
 
 
     return (
@@ -22,7 +25,7 @@ const Hero = () => {
                     </video>
                 </div>
 
-                <div className='flex flex-col gap-5 items-center absolute top-full -mt-20'>
+                <div className='flex flex-col gap-7 items-center absolute top-full -mt-20'>
 
                     <div className='rounded-full overflow-hidden w-44 h-44 bg-gray-200'>
                         <Image
@@ -41,10 +44,18 @@ const Hero = () => {
 
                         <div className='flex gap-4 items-center justify-center'>
                             <div className='flex justify-center items-center'>
-                                <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-green-400 opacity-75"></span>
-                                <div className='rounded-full bg-green-400 w-1 h-1'></div>
+                                <span className={cn(
+                                    "animate-ping absolute inline-flex h-3 w-3 rounded-full opacity-75",
+                                    available ? 'bg-green-400' : 'bg-red-500'
+                                )}></span>
+                                <div className={cn(
+                                    'rounded-full w-1 h-1',
+                                    available ? 'bg-green-400' : 'bg-red-500'
+                                )}></div>
                             </div>
-                            <p className='text-paragraph text-sm'>{t("state.available")}</p>
+                            <p className='text-paragraph text-sm'>
+                                {available ? t("state.available") : t("state.not-available")}
+                            </p>
                         </div>
 
 
@@ -53,13 +64,26 @@ const Hero = () => {
                         <p className='text-paragraph'>{t("occupation")}</p>
                     </div>
 
-                    <div className='flex gap-3 text-[#7a7a7a]'>
-                        <Github />
-                        <Facebook />
-                        <Linkedin />
+                    <div className='flex gap-6 text-[#7a7a7a]'>
+
+                        <a href={t('social.github.url')} target='_blank'>
+                            <Github className='hover:text-white transition duration-300 hover:scale-110' />
+                        </a>
+
+                        <a href={t('social.linkedin.url')} target='_blank'>
+                            <Linkedin className='hover:text-white transition duration-300 hover:scale-110' />
+                        </a>
+
+                        <a href={t('social.facebook.url')} target='_blank'>
+                            <Facebook className='hover:text-white transition duration-300 hover:scale-110' />
+                        </a>
+
+                        <a href={t('social.instagram.url')} target='_blank'>
+                            <Instagram className='hover:text-white transition duration-300 hover:scale-110' />
+                        </a>
                     </div>
 
-                    <Button variant="primary">
+                    <Button variant="primary" onClick={() => goTo('contact')}>
                         <Send />
                         {t("button.text")}
                         <div className="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">
