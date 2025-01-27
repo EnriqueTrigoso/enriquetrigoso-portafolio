@@ -1,4 +1,5 @@
 import Background from "@/components/layout/Background";
+import Footer from "@/components/layout/Footer";
 import LocaleSwitcher from "@/components/layout/LocaleSwitcher";
 
 export default function ProjectLayout({
@@ -15,6 +16,7 @@ export default function ProjectLayout({
                 </div>
             </div>
             {children}
+            <Footer />
         </>
     );
 }

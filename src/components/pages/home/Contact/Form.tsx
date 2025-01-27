@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { FormEvent } from 'react'
 import {
     Select,
     SelectContent,
@@ -15,10 +16,15 @@ const Form = () => {
 
     const t = useTranslations("contact")
 
+    const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        
+    }
+
     return (
         <form
             id="contact-form"
-            method="POST"
+            onSubmit={onSubmit}
             className="relative space-y-6 bg-neutral-800 p-8 rounded-xl shadow-lg"
         >
             <BorderTrail
@@ -48,7 +54,7 @@ const Form = () => {
                     className="w-full border border-gray-500 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-accent" />
 
                 <Select>
-                    <SelectTrigger className="w-[280px] border-gray-500 text-paragraph">
+                    <SelectTrigger className="border-gray-500 text-paragraph">
                         <SelectValue placeholder={t("inputs.service.placeholder")} />
                     </SelectTrigger>
                     <SelectContent className='z-10 bg-black border-gray-500 text-paragraph'>
@@ -71,6 +77,7 @@ const Form = () => {
 
             <div className='flex justify-end'>
                 <button
+                    type='submit'
                     className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950 px-6 font-medium text-paragraph transition hover:scale-110">
                     <span>{t("button_text")}</span>
                     <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">

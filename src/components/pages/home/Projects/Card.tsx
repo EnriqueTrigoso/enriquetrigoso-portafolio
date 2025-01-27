@@ -9,13 +9,21 @@ import { BorderTrail } from '@/components/ui/border-trail'
 
 interface Props {
     project: Project,
+    index: number,
 }
 
-const Card = ({ project }: Props) => {
+const Card = ({ project, index }: Props) => {
+
+    const delay = index * 200
+
     return (
 
         <div className='h-full flex flex-col gap-2'>
-            <div className="flex-1 relative group h-full bg-[#141414] py-6 px-4 rounded-lg space-y-6">
+            <div className="flex-1 relative group h-full bg-[#141414] py-6 px-4 rounded-lg space-y-6"
+                data-aos="fade-up"
+                data-aos-delay={delay.toString()}
+                data-aos-duration="1000"
+            >
 
                 <BorderTrail
                     style={{
@@ -77,11 +85,6 @@ const Card = ({ project }: Props) => {
 
 
             </div>
-
-
-
-
-
         </div >
     )
 }

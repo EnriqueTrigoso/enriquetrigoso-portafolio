@@ -13,11 +13,15 @@ const Navigation = ({ position }: Props) => {
   const t = useTranslations("header");
 
   return (
-    <div className={cn(
-      'w-full z-10 py-8',
-      position === 'absolute' && 'absolute top-0 left-0',
-      position === 'relative' && 'relative',
-    )}>
+    <div
+      className={cn(
+        'w-full z-10 py-8',
+        position === 'absolute' && 'absolute top-0 left-0',
+        position === 'relative' && 'relative',
+      )}
+      data-aos="zoom-in"
+      data-aos-duration='1000'
+    >
 
       <div className='container flex justify-between'>
 
@@ -40,7 +44,7 @@ const Navigation = ({ position }: Props) => {
           })}
         </div>
 
-        <div className='flex items-center justify-end'>
+        <div className='flex items-center justify-end' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
           <div className='flex justify-end items-center'>
             <LocaleSwitcher className='' />
           </div>

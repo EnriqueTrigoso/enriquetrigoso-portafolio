@@ -1,78 +1,43 @@
 "use client"
 import TitleLines from '@/components/ui/title-lines'
 import { useTranslations } from 'next-intl'
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-} from "@/components/ui/carousel"
 import Card from './Card'
-import AutoScroll from 'embla-carousel-auto-scroll'
-import { useEffect, useState } from 'react'
-import { EmblaOptionsType } from 'embla-carousel'
-import { type CarouselApi } from "@/components/ui/carousel"
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { Project } from '@/lib/types'
+import { InfiniteSlider } from '@/components/ui/infinite-slider'
 
-
-const options: EmblaOptionsType = {
-    align: "start",
-    loop: true,
-}
 
 const Projects = () => {
 
     const t = useTranslations("projects")
 
-    const [api, setApi] = useState<CarouselApi>()
-
-    useEffect(() => {
-        if (!api) {
-            return
-        }
-
-        api.on("slideFocus", () => {
-            console.log('entro en focus')
-        })
-    }, [api])
-
     return (
         <section className='p-8' id='projects'>
             <div className='container'>
 
-                <TitleLines className="mb-6">
+                <TitleLines className="mb-6 text-center">
                     {t("title")}
                 </TitleLines>
 
-                <Carousel
-                    setApi={setApi}
-                    opts={options}
-                    plugins={[
-                        AutoScroll({
-                            speed: 1,
-                        }),
-                    ]}
-                    onMouseEnter={(event) => console.log(event)}
-                    onMouseLeave={(event) => console.log(event)}
-                >
-                    <CarouselContent>
+                <InfiniteSlider duration={35} durationOnHover={85} gap={24}>
+                    {
+                        t.raw("list").map((project: Project, index: number) => {
+                            return (
+                                <div className="w-[400px]" key={index} >
+                                    <Card project={project} index={index} />
+                                </div>
 
-                        {
-                            t.raw("list").map((project: Project, index: string) => {
-                                return (
-                                    <CarouselItem className="basis-1/3 pl-10" key={index}>
-                                        <Card project={project} />
-                                    </CarouselItem>
-                                )
-                            })
-                        }
+                            )
+                        })
+                    }
+                </InfiniteSlider>
 
-                    </CarouselContent>
-                </Carousel>
-
-                <div className='flex justify-center mt-10'>
+                <div className='flex justify-center mt-10'
+                    data-aos="fade-up"
+                    data-aos-delay='150'
+                    data-aos-duration="1000">
                     <Link href={t("button.path")}>
                         <Button variant='primary'>
                             {t("button.text")}
@@ -80,8 +45,6 @@ const Projects = () => {
                         </Button>
                     </Link>
                 </div>
-
-
 
             </div>
 

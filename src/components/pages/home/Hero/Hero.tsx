@@ -7,7 +7,7 @@ import { ChevronDown, Facebook, Github, Instagram, Linkedin, Send } from 'lucide
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-const available : boolean = true
+const available: boolean = true
 
 const Hero = () => {
 
@@ -22,7 +22,11 @@ const Hero = () => {
                     </video>
                 </div>
 
-                <div className='flex flex-col gap-7 items-center absolute top-full -mt-20'>
+                <div
+                    className='flex flex-col gap-7 items-center absolute top-full -mt-20'
+                    data-aos="zoom-out-up"
+                    data-aos-duration="1500"
+                >
 
                     <div className='rounded-full overflow-hidden w-44 h-44 bg-gray-200'>
                         <Image
@@ -56,12 +60,27 @@ const Hero = () => {
                         </div>
 
 
-                        <h1 className='text-6xl text-white font-instrument-serif italic'>{t("title")}</h1>
+                        <h1
+                            className='text-6xl text-white font-instrument-serif italic'
+                            data-aos='fade-right'
+                            data-aos-duration='1000'
+                            data-aos-delay='0'
+                        >{t("title")}</h1>
 
-                        <p className='text-paragraph'>{t("occupation")}</p>
+                        <p
+                            className='text-paragraph'
+                            data-aos='fade-right'
+                            data-aos-duration='1000'
+                            data-aos-delay='200'
+                        >{t("occupation")}</p>
                     </div>
 
-                    <div className='flex gap-6 text-[#7a7a7a]'>
+                    <div
+                        className='flex gap-6 text-[#7a7a7a]'
+                        data-aos='fade-right'
+                        data-aos-duration='1000'
+                        data-aos-delay='400'
+                    >
 
                         <a href={t('social.github.url')} target='_blank'>
                             <Github className='hover:text-white transition duration-300 hover:scale-110' />
@@ -80,7 +99,13 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <Button variant="primary" onClick={() => goTo('contact')}>
+                    <Button
+                        variant="primary"
+                        onClick={() => goTo('contact')}
+                        data-aos='fade-right'
+                        data-aos-duration='1000'
+                        data-aos-delay='600'
+                    >
                         <Send />
                         {t("button.text")}
                         <div className="animate-shine-infinite absolute inset-0 -top-[20px] flex h-[calc(100%+40px)] w-full justify-center blur-[12px]">

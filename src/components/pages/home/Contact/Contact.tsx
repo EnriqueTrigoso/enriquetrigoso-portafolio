@@ -17,7 +17,10 @@ const Contact = () => {
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Section */}
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <div className="mb-8">
               <span className="text-sm font-medium text-white flex items-center">
                 <Image
@@ -80,7 +83,10 @@ const Contact = () => {
           </div>
 
           {/* Right Section */}
-          <div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <Form />
           </div>
         </div>
