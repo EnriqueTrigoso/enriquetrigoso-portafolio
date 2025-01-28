@@ -27,8 +27,8 @@ const Contact = () => {
                   src="/assets/images/shape/small-arrow.png"
                   alt="arrow"
                   className="mr-2"
-                  width={30}
-                  height={30}
+                  width={45}
+                  height={20}
                 />
                 {t("subtitle")}
               </span>

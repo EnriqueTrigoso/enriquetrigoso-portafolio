@@ -66,6 +66,7 @@ const Skills = () => {
                                                 src={skills_icons[technology]}
                                                 alt="technology"
                                                 fill
+                                                sizes="(max-width: 80px) 80px"
                                                 className="rounded-lg p-2 object-contain object-center pointer-events-none"
                                             />
                                         </div>
@@ -99,6 +100,7 @@ const Skills = () => {
                                                         src={skills_icons[technology]}
                                                         alt='technology'
                                                         fill
+                                                        sizes="(max-width: 80px) 80px"
                                                         className="rounded-lg p-2 object-contain object-center pointer-events-none"
                                                     />
                                                 </div>
