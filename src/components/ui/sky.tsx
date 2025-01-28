@@ -4,8 +4,6 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
     type Container,
     type ISourceOptions,
-    // MoveDirection,
-    // OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -27,7 +25,7 @@ const Sky = () => {
         });
     }, []);
 
-    const particlesLoaded = async (container?: Container): Promise<void> => {
+    const particlesLoaded = async (_?: Container): Promise<void> => {
 
     };
 

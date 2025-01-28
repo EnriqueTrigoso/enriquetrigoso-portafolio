@@ -19,7 +19,9 @@
     "@tsparticles/slim": "3.7.1",
     "@types/aos": "^3.0.7",
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.7.9",
     "class-variance-authority": "0.7.1",
+    "cleave.js": "^1.6.0",
     "clsx": "2.1.1",
     "embla-carousel-auto-scroll": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
@@ -29,19 +31,24 @@
     "next-intl": "3.26.3",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "react-hook-form": "^7.54.2",
     "react-intersection-observer": "^9.15.1",
     "react-use-measure": "^2.1.1",
-    "tailwind-merge": "2.6.0"
+    "resend": "^4.1.1",
+    "tailwind-merge": "2.6.0",
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "typescript": "5",
+    "@eslint/eslintrc": "3",
+    "@hookform/resolvers": "^3.10.0",
+    "@types/cleave.js": "^1.4.12",
     "@types/node": "20",
     "@types/react": "19",
     "@types/react-dom": "19",
-    "postcss": "8",
-    "tailwindcss": "3.4.1",
     "eslint": "9",
     "eslint-config-next": "15.1.4",
-    "@eslint/eslintrc": "3"
+    "postcss": "8",
+    "tailwindcss": "3.4.1",
+    "typescript": "5"
   }
 }

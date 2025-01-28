@@ -507,14 +507,18 @@
                     "Desarrollo Frontend",
                     "Desarrollo Backend",
                     "Desarrollo Fullstack"
-                ]
+                ],
+                "error_msg": "Seleccione un servicio"
             },
             "message": {
                 "placeholder": "Escribe tu mensaje",
                 "error_msg": "El mensaje es muy corto"
             }
         },
-        "button_text": "Enviar mensaje",
+        "button_text": {
+            "normal": "Enviar mensaje",
+            "sending": "Enviando..."
+        },
         "modal": {
             "title": "",
             "message": ""
