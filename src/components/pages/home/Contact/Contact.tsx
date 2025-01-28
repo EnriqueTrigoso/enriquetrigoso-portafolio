@@ -9,7 +9,7 @@ const Contact = () => {
   const t = useTranslations("contact")
 
   return (
-    <section id="contact" className="relative py-32 bg-border">
+    <section id="contact" className="relative py-32 bg-border overflow-hidden">
       <div
         className="absolute inset-0 bg-center"
         style={{ backgroundImage: 'url("/assets/images/bg/contact-bg-01.png")' }}

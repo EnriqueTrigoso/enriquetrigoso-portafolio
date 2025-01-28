@@ -14,7 +14,7 @@ const Projects = () => {
     const t = useTranslations("projects")
 
     return (
-        <section className='p-8' id='projects'>
+        <section className='p-8 overflow-hidden' id='projects'>
             <div className='container'>
 
                 <TitleLines className="mb-6 text-center">

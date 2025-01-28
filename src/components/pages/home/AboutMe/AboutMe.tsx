@@ -13,7 +13,7 @@ const AboutMe = () => {
     const t = useTranslations("about-me")
 
     return (
-        <section className='py-12' id='about-me'>
+        <section className='py-12 overflow-hidden' id='about-me'>
             <div className='container'>
                 <div className='flex flex-col lg:flex-row gap-6'>
 

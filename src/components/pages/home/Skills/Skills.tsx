@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 import CardEffect from './CardEffect';
+import { Tilt } from '@/components/ui/tilt';
 
 const itemVariants = {
     hidden: {
@@ -33,7 +34,7 @@ const Skills = () => {
     const t = useTranslations('skills')
 
     return (
-        <section className='py-10' id='skills'>
+        <section className='py-10 overflow-hidden' id='skills'>
 
             <div className='container'>
 
@@ -121,10 +122,12 @@ const Skills = () => {
                                 <h2 className='text-base mb-4 text-center'>{t("methodologies_title")}</h2>
                             </div>
 
+
                             <CardEffect className="flex gap-6 flex-wrap justify-start">
                                 {
                                     t.raw('methodologies').map((elem: string, index: string) => {
                                         return (
+
                                             <motion.div
                                                 key={index}
                                                 className='px-2 py-1 bg-[#2b2d2e] rounded-lg w-20 h-20 flex items-center justify-center'
@@ -132,11 +135,11 @@ const Skills = () => {
                                             >
                                                 <p className='text-paragraph font-instrument-serif text-xl font-medium text-center pointer-events-none select-none'>{elem}</p>
                                             </motion.div>
+
                                         )
                                     })
                                 }
                             </CardEffect>
-
 
                         </div>
 
