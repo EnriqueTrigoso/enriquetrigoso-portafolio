@@ -79,11 +79,8 @@ export function InfiniteSlider({
                 setCurrentDuration(durationOnHover);
             },
             onHoverEnd: () => {
-                
                 setIsTransitioning(true);
                 setCurrentDuration(duration);
-
-                console.log('setCurrentDuration', duration)
             },
         }
         : {};
