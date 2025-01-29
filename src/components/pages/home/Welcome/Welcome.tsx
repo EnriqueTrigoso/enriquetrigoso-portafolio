@@ -66,26 +66,28 @@ const Welcome = () => {
         data-aos='fade-up'
         data-aos-duration='500'
       >
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-          <TextEffect
-            preset='fade-in-blur'
-            delay={1.5}
-            speedReveal={1.1}
-            speedSegment={0.3}
-          >
-            {t('title')}
-          </TextEffect>
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
-          <TextEffect
-            preset='fade-in-blur'
-            delay={1.5}
-            speedReveal={1.1}
-            speedSegment={0.3}
-          >
-            {t('description')}
-          </TextEffect>
-        </p>
+
+        <TextEffect
+          as='h1'
+          className="text-5xl md:text-7xl font-bold text-white mb-6"
+          preset='fade-in-blur'
+          delay={1.5}
+          speedReveal={1.1}
+          speedSegment={0.3}
+        >
+          {t('title')}
+        </TextEffect>
+
+        <TextEffect
+          className="text-xl md:text-2xl text-gray-300 max-w-2xl"
+          preset='fade-in-blur'
+          delay={1.5}
+          speedReveal={1.1}
+          speedSegment={0.3}
+        >
+          {t('description')}
+        </TextEffect>
+
       </div>
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0f] to-transparent"></div>
       <style jsx>{`
