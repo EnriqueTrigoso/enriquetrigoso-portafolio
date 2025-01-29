@@ -44,6 +44,7 @@ body {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: rgb(185, 185, 185) rgb(0, 0, 0);
+  scrollbar-gutter: stable;
 }
 
 #tsparticles {

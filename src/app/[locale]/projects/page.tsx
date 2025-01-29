@@ -3,10 +3,11 @@ import useAOS from '@/components/hooks/useAOS';
 import { BorderTrail } from '@/components/ui/border-trail';
 import { Button } from '@/components/ui/button';
 import RichText from '@/components/ui/richtext';
+import { enablePageScroll } from '@fluejs/noscroll';
 import { CodeXml, Github, Package, SquareArrowOutUpRight, Star } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export interface Project {
   project_name: string
@@ -46,6 +47,11 @@ const Project = () => {
   const t = useTranslations("projects")
 
   useAOS()
+
+  useEffect(() => {
+    enablePageScroll();
+    document.body.style.overflow = 'auto';
+  }, [])
 
   return (
     <section>
@@ -163,7 +169,7 @@ const Project = () => {
 
                       <ul>
                         {
-                          elem.key_features.map((feature, index) => { 
+                          elem.key_features.map((feature, index) => {
 
                             const delay = (index * 150) + 250
 

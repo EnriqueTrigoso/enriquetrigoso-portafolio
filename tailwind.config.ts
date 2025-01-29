@@ -38,6 +38,7 @@ export default {
         ["shine-infinite"]: "shine-infinite 2s ease-in-out infinite",
         blob: 'blob 10s infinite',
         fadeIn: 'fadeIn 0.7s ease-out',
+        fadeOut: 'fadeOut 0.7s ease-out',
         slideInLeft: 'slideInLeft 0.7s ease-out',
         slideInRight: 'slideInRight 0.7s ease-out',
       },
@@ -59,6 +60,10 @@ export default {
         fadeIn: {
           from: { opacity: '0' },
           to: { opacity: '1' },
+        },
+        fadeOut: {
+          from: { opacity: '1' },
+          to: { opacity: '0' },
         },
         slideInLeft: {
           from: { opacity: '0', transform: 'translateX(-30px)' },

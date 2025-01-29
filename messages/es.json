@@ -28,6 +28,10 @@
             }
         ]
     },
+    "welcome": {
+        "title": "Bienvenido a mi Universo",
+        "description": "Explora mi portafolio y descubre los proyectos que he creado"
+    },
     "hero": {
         "image": {
             "path": "",

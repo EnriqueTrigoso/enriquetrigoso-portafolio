@@ -61,7 +61,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${instrument_serif.variable} ${poppins.variable}`} style={{overflowX: 'hidden'}}>
+      <body className={`${instrument_serif.variable} ${poppins.variable}`} style={{ overflowX: 'hidden', overflowY: 'hidden' }}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
