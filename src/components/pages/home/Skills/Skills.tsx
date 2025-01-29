@@ -7,7 +7,6 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 import CardEffect from './CardEffect';
-import { Tilt } from '@/components/ui/tilt';
 
 const itemVariants = {
     hidden: {
