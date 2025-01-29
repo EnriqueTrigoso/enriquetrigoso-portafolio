@@ -68,7 +68,7 @@ const Skills = () => {
                                                 alt="technology"
                                                 fill
                                                 sizes="(max-width: 80px) 80px"
-                                                className="rounded-lg p-2 object-contain object-center pointer-events-none"
+                                                className="rounded-lg p-2 object-contain object-center"
                                             />
                                         </div>
                                         <p className="text-xs text-center">{technology}</p>
