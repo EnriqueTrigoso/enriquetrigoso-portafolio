@@ -7,22 +7,27 @@
     "header": {
         "navigation": [
             {
+                "id": "hero",
                 "title": "Inicio",
                 "path": "hero"
             },
             {
+                "id": "about-me",
                 "title": "Sobre mí",
                 "path": "about-me"
             },
             {
+                "id": "projects",
                 "title": "Proyectos",
                 "path": "projects"
             },
             {
+                "id": "skills",
                 "title": "Habilidades",
                 "path": "skills"
             },
             {
+                "id": "contact",
                 "title": "Contacto",
                 "path": "contact"
             }

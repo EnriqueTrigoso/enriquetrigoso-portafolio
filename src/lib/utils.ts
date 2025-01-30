@@ -5,14 +5,14 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function goTo(id: string) {
+export function scrollTo(id: string) {
 
   const element = document.getElementById(id);
+  const offset = 74;
 
   if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth'
-    });
+    const top = element.offsetTop - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
   }
 
 }

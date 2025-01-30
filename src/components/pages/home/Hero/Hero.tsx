@@ -1,7 +1,7 @@
 'use client'
 import { Button } from '@/components/ui/button';
 import Sky from '@/components/ui/sky'
-import { cn, goTo } from '@/lib/utils';
+import { cn, scrollTo } from '@/lib/utils';
 import { ChevronDown, Facebook, Github, Instagram, Linkedin, Send } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -16,7 +16,7 @@ const Hero = () => {
     const { visible } = useWaitWelcome()
 
     return (
-        <section className='relative w-full h-screen flex flex-col' id='hero'>
+        <section className='relative w-full h-screen flex flex-col overflow-hidden p-0' id='hero'>
             <div className='flex items-center justify-center content-center flex-row flex-nowrap gap-2.5 h-min overflow-visible p-0 relative w-full'>
                 <div className='flex-1 h-[430px] opacity-[0.44] relative filter grayscale'>
                     <video preload="auto" autoPlay loop muted playsInline className='cursor-auto w-full h-full rounded-none block object-cover bg-transparent object-center'>
@@ -116,7 +116,7 @@ const Hero = () => {
 
                                 <Button
                                     variant="primary"
-                                    onClick={() => goTo('contact')}
+                                    onClick={() => scrollTo('contact')}
                                     data-aos='fade-right'
                                     data-aos-duration='1000'
                                     data-aos-delay='800'
@@ -135,13 +135,13 @@ const Hero = () => {
 
             </div>
 
-            <div className='h-full overflow-hidden'>
+            <div className='h-full'>
                 <Sky />
             </div>
 
             <div className='absolute w-full bottom-5 flex justify-center items-center'>
                 <a className='animate-bounce' onClick={() => {
-                    goTo('about-me')
+                    scrollTo('about-me')
                 }}>
                     <ChevronDown width={32} height={32} />
                 </a>

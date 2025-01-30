@@ -9,7 +9,7 @@ export default function HomeLayout({
 }) {
     return (
         <>
-            <Navigation position='absolute' />
+            <Navigation className='fixed' />
             {children}
             <Footer />
         </>

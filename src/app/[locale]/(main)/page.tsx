@@ -14,7 +14,7 @@ export default function Home() {
   useAOS()
 
   useEffect(() => {
-    
+
     disablePageScroll();
 
     const timer = setTimeout(() => {
@@ -22,7 +22,11 @@ export default function Home() {
       document.body.style.overflow = 'auto';
     }, WELCOME_TOTAL_LIFE_TIME);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer)
+      enablePageScroll();
+      document.body.style.overflow = 'auto';
+    };
 
   }, [])
 
