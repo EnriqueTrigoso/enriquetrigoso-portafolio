@@ -25,7 +25,7 @@ const Hero = () => {
                 </div>
 
                 <div
-                    className='flex flex-col gap-7 items-center absolute top-full -mt-20'
+                    className='flex flex-col gap-7 items-center absolute top-full -mt-56'
                 >
                     {
                         !visible && (
