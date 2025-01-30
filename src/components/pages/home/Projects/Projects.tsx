@@ -11,7 +11,7 @@ import { InfiniteSlider } from '@/components/ui/infinite-slider'
 
 const Projects = () => {
 
-    const t = useTranslations("projects")
+    const t = useTranslations("home.projects")
 
     return (
         <section className='p-8 overflow-hidden' id='projects'>

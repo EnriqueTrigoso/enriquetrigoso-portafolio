@@ -6,7 +6,7 @@ import Form from './Form'
 
 const Contact = () => {
 
-  const t = useTranslations("contact")
+  const t = useTranslations("home.contact")
 
   return (
     <section id="contact" className="relative py-32 bg-border overflow-hidden">

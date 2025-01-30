@@ -10,7 +10,7 @@ interface Props {
 
 const Navigation = ({ className }: Props) => {
 
-  const t = useTranslations("header");
+  const t = useTranslations("layout.header");
 
   const { visible } = useWaitWelcome()
   const [activeSection, setActiveSection] = useState('hero');

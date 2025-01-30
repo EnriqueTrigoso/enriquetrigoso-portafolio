@@ -13,6 +13,7 @@ export interface Buttons {
     live_demo: Button
     repository: Button
     see_details: Button
+    watch_video: Button
 }
 export interface Button {
     title: string

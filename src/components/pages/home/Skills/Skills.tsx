@@ -30,7 +30,7 @@ const itemVariants = {
 
 const Skills = () => {
 
-    const t = useTranslations('skills')
+    const t = useTranslations('home.skills')
 
     return (
         <section className='py-10 overflow-hidden' id='skills'>

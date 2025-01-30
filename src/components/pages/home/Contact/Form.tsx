@@ -23,7 +23,7 @@ import { TextShimmerWave } from '@/components/ui/text-shimmer-wave';
 
 const Form = () => {
 
-    const t = useTranslations("contact")
+    const t = useTranslations("home.contact")
 
     const {
         register,

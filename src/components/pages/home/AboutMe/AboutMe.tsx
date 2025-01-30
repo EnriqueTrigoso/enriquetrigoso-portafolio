@@ -10,7 +10,7 @@ import { TextEffect } from '@/components/ui/text-effect'
 
 const AboutMe = () => {
 
-    const t = useTranslations("about-me")
+    const t = useTranslations("home.about-me")
 
     return (
         <section className='py-12 overflow-hidden' id='about-me'>

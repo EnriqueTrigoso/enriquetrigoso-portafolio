@@ -1,10 +1,11 @@
 "use client"
 import useAOS from '@/components/hooks/useAOS';
+import { VideoModal } from '@/components/pages/projects/VideoModal';
 import { BorderTrail } from '@/components/ui/border-trail';
 import { Button } from '@/components/ui/button';
 import RichText from '@/components/ui/richtext';
 import { enablePageScroll } from '@fluejs/noscroll';
-import { CodeXml, Github, Package, SquareArrowOutUpRight, Star } from 'lucide-react';
+import { Code, CodeXml, Github, MonitorPlay, Package, SquareArrowOutUpRight, Star } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React, { useEffect } from 'react'
@@ -36,15 +37,18 @@ export interface TechnologiesUsed {
 export interface Buttons {
   live_demo: Project_Button
   repository: Project_Button
+  watch_video: Project_Button
 }
 export interface Project_Button {
   title: string
   url: string
 }
 
+const custom_offset = '-500'
+
 const Project = () => {
 
-  const t = useTranslations("projects")
+  const t = useTranslations("home.projects")
 
   useAOS()
 
@@ -57,10 +61,13 @@ const Project = () => {
     <section>
       <div className='container py-10'>
 
-        <div className='flex flex-col gap-16'>
+        <div className='flex flex-col gap-20'>
 
           {
             t.raw("list").map((elem: Project, index: string) => {
+
+              const is_last_project = (index + 1) === t.raw("list").length
+
               return (
                 <div key={index} className='grid grid-cols-2 gap-6'>
 
@@ -78,26 +85,60 @@ const Project = () => {
                       }
                     </p>
 
-                    <div className='flex gap-2'>
+                    {
+                      (elem.buttons.live_demo.url || elem.buttons.watch_video.url || elem.buttons.repository.url) && (
 
-                      <a href={elem.buttons.live_demo.url} target='_blank' data-aos='fade-up' data-aos-duration='1000' data-aos-delay=''>
-                        <Button>
-                          <SquareArrowOutUpRight />
-                          {elem.buttons.live_demo.title}
-                        </Button>
-                      </a>
+                        <div className='flex gap-2'>
 
-                      <a href={elem.buttons.repository.url} target='_blank' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='100'>
-                        <Button>
-                          <Github />
-                          {elem.buttons.repository.title}
-                        </Button>
-                      </a>
-                    </div>
+                          {
+                            elem.buttons.live_demo.url && (
+                              <a href={elem.buttons.live_demo.url} target='_blank' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='' data-aos-offset={is_last_project && custom_offset}>
+                                <Button>
+                                  <SquareArrowOutUpRight />
+                                  {elem.buttons.live_demo.title}
+                                </Button>
+                              </a>
+                            )
+                          }
+
+                          {
+                            elem.buttons.watch_video.url && (
+                              <VideoModal video={elem.buttons.watch_video.url} title={elem.project_name}>
+                                <Button>
+                                  <MonitorPlay />
+                                  {elem.buttons.watch_video.title}
+                                </Button>
+                              </VideoModal>
+
+                            )
+                          }
+
+                          {
+                            elem.buttons.repository.url && (
+                              <a href={elem.buttons.repository.url} target='_blank' data-aos='fade-up' data-aos-duration='1000' data-aos-delay='100' data-aos-offset={is_last_project && custom_offset}>
+                                <Button>
+                                  <Github />
+                                  {elem.buttons.repository.title}
+                                </Button>
+                              </a>
+                            )
+                          }
+
+
+
+                        </div>
+                      )
+                    }
 
                     <div>
 
-                      <div className='flex gap-2 mb-4' data-aos='fade-right' data-aos-duration='1000' data-aos-delay='300'>
+                      <div
+                        className='flex gap-2 mb-4'
+                        data-aos='fade-right'
+                        data-aos-duration='1000'
+                        data-aos-delay='300'
+                        data-aos-offset={is_last_project && custom_offset}
+                      >
                         <CodeXml />
                         <h3 className='text-xl'>{t("project_detail.technology_title")}</h3>
                       </div>
@@ -112,7 +153,12 @@ const Project = () => {
 
                             return (
                               (
-                                <div key={index} data-aos='fade-right' data-aos-duration='1000' data-aos-delay={delay}>
+                                <div key={index}
+                                  data-aos='fade-right'
+                                  data-aos-duration='1000'
+                                  data-aos-delay={delay}
+                                  data-aos-offset={is_last_project && custom_offset}
+                                >
                                   <div
                                     className='group relative overflow-hidden px-3 md:px-4 py-2 md:py-2.5 bg-gradient-to-r from-gray-600/10 to-gray-600/10 rounded-3xl border border-gray-500/10 hover:border-gray-200/30 transition-all duration-1000 cursor-default'
                                   >
@@ -120,7 +166,15 @@ const Project = () => {
                                     </div>
 
                                     <div className='relative flex items-center gap-1.5 md:gap-2'>
-                                      <Package />
+
+                                      {
+                                        ['framework', 'library'].includes(technology.type) && <Package />
+                                      }
+
+                                      {
+                                        ['language', 'methodology'].includes(technology.type) && <Code />
+                                      }
+
                                       <span>{technology.name}</span>
                                     </div>
 
@@ -139,7 +193,10 @@ const Project = () => {
                   <div className='overflow-hidden'>
                     <div
                       className='relative rounded-2xl overflow-hidden bg-black border border-white/10 shadow-2xl group'
-                      data-aos="fade-left" data-aos-duration='1000' data-aos-delay="200"
+                      data-aos="fade-left"
+                      data-aos-duration='1000'
+                      data-aos-delay="200"
+                      data-aos-offset={is_last_project && custom_offset}
                     >
                       <Image
                         src={elem.images_path.primary.src}
@@ -152,7 +209,10 @@ const Project = () => {
 
                     <div
                       className='mt-6 bg-white/[0.02] backdrop-blur-xl rounded-2xl p-8 border border-white/10 space-y-4 hover:border-white/20 transition-colors duration-300 group md:space-y-4'
-                      data-aos="fade-left" data-aos-duration='1000' data-aos-delay="200"
+                      data-aos="fade-left"
+                      data-aos-duration='1000'
+                      data-aos-delay="200"
+                      data-aos-offset={is_last_project && custom_offset}
                     >
                       <BorderTrail
                         style={{
@@ -161,7 +221,13 @@ const Project = () => {
                         }}
                         size={200}
                       />
-                      <h3 className='text-xl flex items-center gap-2 font-bold' data-aos='fade-left' data-aos-duration='1000' data-aos-delay='200'>
+                      <h3
+                        className='text-xl flex items-center gap-2 font-bold'
+                        data-aos='fade-left'
+                        data-aos-duration='1000'
+                        data-aos-delay='200'
+                        data-aos-offset={is_last_project && custom_offset}
+                      >
                         <Star className='w-5 h-5 text-yellow-400 group-hover:rotate-[20deg] transition-transform duration-300' />
                         {t("project_detail.key_features_title")}
                       </h3>
@@ -173,7 +239,12 @@ const Project = () => {
                             const delay = (index * 150) + 250
 
                             return (
-                              <div key={index} data-aos='fade-left' data-aos-duration='1000' data-aos-delay={delay} data-aos-offset='-100'>
+                              <div key={index}
+                                data-aos='fade-left'
+                                data-aos-duration='1000'
+                                data-aos-delay={delay}
+                                data-aos-offset={is_last_project && custom_offset}
+                              >
                                 <li
                                   className='group flex items-start space-x-3 p-2.5 md:p-3.5 rounded-xl hover:bg-white/5 transition-all duration-300 border border-transparent hover:border-white/10 animate-fadeIn'
                                 >

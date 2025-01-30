@@ -2,10 +2,11 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { CornerUpRight, SquareArrowOutUpRight } from 'lucide-react'
+import { CornerUpRight, MonitorPlay, SquareArrowOutUpRight } from 'lucide-react'
 import { Project } from '@/lib/types'
 import RichText from '@/components/ui/richtext'
 import { BorderTrail } from '@/components/ui/border-trail'
+import { VideoModal } from '../../projects/VideoModal'
 
 interface Props {
     project: Project,
@@ -67,12 +68,28 @@ const Card = ({ project, index }: Props) => {
 
                     <div className='flex gap-2 justify-between'>
 
-                        <a href={project.buttons.live_demo.url} target='_blank'>
-                            <Button>
-                                {project.buttons.live_demo.title}
-                                <SquareArrowOutUpRight />
-                            </Button>
-                        </a>
+                        {
+                            project.buttons.live_demo.url && (
+                                <a href={project.buttons.live_demo.url} target='_blank'>
+                                    <Button>
+                                        {project.buttons.live_demo.title}
+                                        <SquareArrowOutUpRight />
+                                    </Button>
+                                </a>
+                            )
+                        }
+
+                        {
+                            project.buttons.watch_video.url && (
+                                <VideoModal video={project.buttons.watch_video.url} title={project.project_name}>
+                                    <Button>
+                                        <MonitorPlay />
+                                        {project.buttons.watch_video.title}
+                                    </Button>
+                                </VideoModal>
+                            )
+                        }
+
 
                         <Link href={project.buttons.see_details.url}>
                             <Button>

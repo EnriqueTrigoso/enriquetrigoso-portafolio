@@ -10,7 +10,7 @@ export const WELCOME_TOTAL_LIFE_TIME = WELCOME_LIFE_TIME + EXIT_ANIMATION_DURATI
 
 const Welcome = () => {
 
-  const t = useTranslations('welcome')
+  const t = useTranslations('home.welcome')
 
   const [visible, setVisible] = useState(true);
   const [animating, setAnimating] = useState(false);

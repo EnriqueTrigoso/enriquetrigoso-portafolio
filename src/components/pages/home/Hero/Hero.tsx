@@ -11,7 +11,7 @@ const available: boolean = true
 
 const Hero = () => {
 
-    const t = useTranslations("hero");
+    const t = useTranslations("home.hero");
 
     const { visible } = useWaitWelcome()
 
