@@ -1,156 +1,663 @@
 {
     "metadata": {
-        "title": "",
-        "description": "",
-        "image": ""
+        "title": "Portfolio - Enrique Trigoso",
+        "description": "Explore my portfolio of technology projects and discover how I can help you develop effective and customized solutions for your needs.",
+        "image": "https://drive.google.com/u/0/drive-viewer/AKGpihaoUb0paQmyr3TiViKzPmc7Ak0qahibkqLa8k6gbtC_fkbybdr3AztXyP_k-mwfNym9kPYIaXh1Od_EcIJ_h6zY9CsWlfjDUg=s2560"
     },
-    "header": {
-        "navigation": [
-            {
-                "title": "Home",
+    "layout": {
+        "header": {
+            "navigation": [
+                {
+                    "id": "hero",
+                    "title": "Home",
+                    "path": "hero"
+                },
+                {
+                    "id": "about-me",
+                    "title": "About Me",
+                    "path": "about-me"
+                },
+                {
+                    "id": "projects",
+                    "title": "Projects",
+                    "path": "projects"
+                },
+                {
+                    "id": "skills",
+                    "title": "Skills",
+                    "path": "skills"
+                },
+                {
+                    "id": "contact",
+                    "title": "Contact",
+                    "path": "contact"
+                }
+            ]
+        },
+        "project_header": {
+            "button": {
+                "text": "Back",
                 "path": "/"
-            },
-            {
-                "title": "About Me",
-                "path": "#acerca-de-mi"
-            },
-            {
-                "title": "Proyectos",
-                "path": "#acerca-de-mi"
-            },
-            {
-                "title": "Habilidades",
-                "path": "#acerca-de-mi"
-            },
-            {
-                "title": "Contacto",
-                "path": "#acerca-de-mi"
-            }
-        ]
-    },
-    "hero": {
-        "image": {
-            "path": "",
-            "alt": ""
-        },
-        "state": {
-            "available": "Disponible para trabajar",
-            "not-available": "No disponible"
-        },
-        "title": "Enrique Trigoso",
-        "occupation": "Desarrollador Full Stack",
-        "social": {
-            "github": {
-                "url": ""
-            },
-            "facebook": {
-                "url": ""
-            },
-            "linkedin": {
-                "url": ""
             }
         },
-        "button": {
-            "text": "Contáctame",
-            "url": ""
+        "footer": {
+            "title": "Programmed by Enrique Trigoso"
         }
     },
-    "about-me": {
-        "title": "Sobre mí",
-        "description": "Tengo experiencia en el desarrollo de soluciones tecnológicas. He trabajado en una empresa de comparadores de seguros, donde implementé sistemas ERP y desarrollé interfaces web utilizando Next.js. <br></br><br></br>Tengo habilidades en la creación de endpoints y en la optimización de procesos para mejorar la eficiencia. Mi objetivo es ofrecer soluciones prácticas y efectivas que se adapten a las necesidades del usuario."
-    },
-    "projects": {
-        "title": "Mis proyectos",
-        "list": [
-            {
-                "project_name": "B&V Group Import S.A.C.",
-                "images_path": {
-                    "primary": {
-                        "src": "/assets/home/projects/supermarket_1.png",
-                        "alt": ""
-                    },
-                    "secondary": {
-                        "src": "/assets/home/projects/supermarket_2.png",
-                        "alt": ""
-                    }
-                },
-                "path": "/en/projects",
-                "technologies used": [
-                    "CSS Modules"
-                ]
-            },
-            {
-                "project_name": "Age of Z Bot",
-                "images_path": {
-                    "primary": {
-                        "src": "/assets/home/projects/ageofz1.png",
-                        "alt": ""
-                    },
-                    "secondary": {
-                        "src": "/assets/home/projects/ageofz2.png",
-                        "alt": ""
-                    }
-                },
-                "path": "/projects",
-                "technologies used": [
-                    ""
-                ]
-            },
-            {
-                "project_name": "ERP Test",
-                "images_path": {
-                    "primary": {
-                        "src": "/assets/home/projects/erp1.webp",
-                        "alt": ""
-                    },
-                    "secondary": {
-                        "src": "/assets/home/projects/erp2.webp",
-                        "alt": ""
-                    }
-                },
+    "home": {
+        "welcome": {
+            "title": "Welcome to My Universe",
+            "description": "Explore my portfolio and discover the projects I have created"
+        },
+        "hero": {
+            "image": {
                 "path": "",
-                "technologies used": [
-                    ""
-                ]
+                "alt": ""
             },
-            {
-                "project_name": "Eva Movil",
-                "images_path": {
-                    "primary": {
-                        "src": "/assets/home/projects/evamovil1.png",
-                        "alt": ""
-                    },
-                    "secondary": {
-                        "src": "/assets/home/projects/evamovil2.png",
-                        "alt": ""
-                    }
-                },
-                "path": "",
-                "technologies used": [
-                    ""
-                ]
+            "state": {
+                "available": "Available for work",
+                "not-available": "Not available"
             },
-            {
-                "project_name": "Dota 2 Interface",
-                "images_path": {
-                    "primary": {
-                        "src": "/assets/home/projects/dota2interface_1.png",
-                        "alt": ""
-                    },
-                    "secondary": {
-                        "src": "/assets/home/projects/dota2interface_2.png",
-                        "alt": ""
-                    }
+            "title": "Enrique Trigoso",
+            "occupation": "Full Stack Developer",
+            "social": {
+                "github": {
+                    "url": "https://github.com/EnriqueTrigoso"
                 },
-                "path": "",
-                "technologies used": [
-                    ""
+                "facebook": {
+                    "url": "https://www.facebook.com/enrique.trigosotipula"
+                },
+                "linkedin": {
+                    "url": "www.linkedin.com/in/enrique-trigoso-53122b295"
+                },
+                "instagram": {
+                    "url": "https://www.instagram.com/enriquett95/"
+                }
+            },
+            "button": {
+                "text": "Contact Me",
+                "url": ""
+            }
+        },
+        "about-me": {
+            "title": "About Me",
+            "description": "I am a programmer with experience in developing technological solutions. I have worked at an insurance comparison company, where I implemented their ERP system and developed web interfaces using Next.js.<br></br><br></br>I have skills in creating endpoints and optimizing processes to improve efficiency. I focus on providing practical and effective solutions that adapt to the specific needs of the user, ensuring good performance and functionality.",
+            "buttons": {
+                "see_cv": {
+                    "text": "View CV",
+                    "path": ""
+                },
+                "download_cv": {
+                    "text": "Download CV",
+                    "path": ""
+                }
+            }
+        },
+        "projects": {
+            "title": "My Projects",
+            "list": [
+                {
+                    "project_name": "B&V Group Import S.A.C.",
+                    "id": "importgroup",
+                    "images_path": {
+                        "primary": {
+                            "src": "/assets/home/projects/supermarket_1.png",
+                            "alt": "B&V Group Import S.A.C."
+                        },
+                        "secondary": {
+                            "src": "/assets/home/projects/supermarket_2.png",
+                            "alt": "B&V Group Import S.A.C."
+                        }
+                    },
+                    "path": "/es/projects",
+                    "description": "This Peruvian e-commerce project focuses on selling spare parts and accessories for cars, offering a platform organized by multiple categories with individual descriptions and reference images for each product. <br></br><br></br>Users can search for products, add them to a shopping cart, and finally redirect the order to WhatsApp to conveniently complete the purchase. <br></br><br></br>This platform aims to provide a smooth and personalized shopping experience, leveraging digital technologies to enhance customer interaction and boost sales in the Peruvian market.",
+                    "buttons": {
+                        "live_demo": {
+                            "title": "View Demo",
+                            "url": "https://supermarket-project-nu.vercel.app/"
+                        },
+                        "repository": {
+                            "title": "Github",
+                            "url": "https://github.com/EnriqueTrigoso/supermarket-project/"
+                        },
+                        "see_details": {
+                            "title": "View Details",
+                            "url": "/es/projects#importgroup"
+                        },
+                        "watch_video": {
+                            "title": "View Video",
+                            "url": ""
+                        }
+                    },
+                    "key_features": [
+                        "Modern and Elegant Design: The platform features a visually appealing and contemporary design, providing a pleasant aesthetic experience.",
+                        "Intuitive Interface: Easy to use and navigate, allowing users to quickly find what they are looking for.",
+                        "Segmented and Organized: With well-defined categories, it facilitates the search for specific products in a clear and structured manner.",
+                        "Product Detail View: Includes accurate descriptions and high-quality images for detailed visualization.",
+                        "Store Locator: Allows customers to easily locate the nearest stores and plan their visits accurately."
+                    ],
+                    "technologies_used": [
+                        {
+                            "name": "Nextjs",
+                            "type": "framework"
+                        },
+                        {
+                            "name": "Javascript",
+                            "type": "language"
+                        },
+                        {
+                            "name": "CSS Modules",
+                            "type": "methodology"
+                        },
+                        {
+                            "name": "Redux",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Supabase",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Mapbox",
+                            "type": "library"
+                        }
+                    ]
+                },
+                {
+                    "project_name": "Age of Z Bot",
+                    "id": "ageofzbot",
+                    "images_path": {
+                        "primary": {
+                            "src": "/assets/home/projects/ageofz1.png",
+                            "alt": "Age of Z Bot"
+                        },
+                        "secondary": {
+                            "src": "/assets/home/projects/ageofz2.png",
+                            "alt": "Age of Z Bot"
+                        }
+                    },
+                    "path": "/es/projects",
+                    "description": "This project develops an advanced bot designed for automating repetitive actions in a game, allowing simultaneous management of multiple accounts. <br></br><br></br>The bot uses image detection techniques and optical character recognition (OCR) to gather relevant information from the game. With this information, the bot makes autonomous decisions based on the collected data, executing precise actions through invisible clicks that simulate human interactions. <br></br><br></br>This automation not only optimizes time and efficiency but also reduces the manual workload, allowing players to focus on more strategic aspects or enjoy the game without the monotony of repetitive tasks.",
+                    "buttons": {
+                        "live_demo": {
+                            "title": "View Demo",
+                            "url": ""
+                        },
+                        "repository": {
+                            "title": "Github",
+                            "url": "https://github.com/EnriqueTrigoso/AOZ-Bot"
+                        },
+                        "see_details": {
+                            "title": "View Details",
+                            "url": "/es/projects#ageofzbot"
+                        },
+                        "watch_video": {
+                            "title": "View Video",
+                            "url": "/assets/video/projects/age_of_z_bot.mp4"
+                        }
+                    },
+                    "key_features": [
+                        "Intuitive Interface, divided by tabs and windows according to functionality, with the most needed ones displayed first.",
+                        "Stores important information about statistics, resources, soldiers.",
+                        "Multitasking, manages up to 20 instances simultaneously.",
+                        "Customizable, all possible actions can be configured independently and according to the game account."
+                    ],
+                    "technologies_used": [
+                        {
+                            "name": "Python",
+                            "type": "language"
+                        },
+                        {
+                            "name": "OpenCV",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Pandas",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Pytesseract",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Pyqt6",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Threading",
+                            "type": "library"
+                        },
+                        {
+                            "name": "PyAutoGUI",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Pywin32",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Networkx",
+                            "type": "library"
+                        }
+                    ]
+                },
+                {
+                    "project_name": "ERP",
+                    "id": "erp",
+                    "images_path": {
+                        "primary": {
+                            "src": "/assets/home/projects/erp_1.png",
+                            "alt": "ERP"
+                        },
+                        "secondary": {
+                            "src": "/assets/home/projects/erp_2.png",
+                            "alt": "ERP"
+                        }
+                    },
+                    "path": "/es/projects",
+                    "description": "Comprehensive web application that allows efficient management and visualization of all relevant company information. <br></br><br></br>It allows the entry and tracking of details of potential leads; manage and analyze data related to leads, sales, operators, supervisors, and other key performance indicators. <br></br><br></br>Automate repetitive and routine tasks to improve operational efficiency and reduce time spent on manual tasks. Provide accurate analysis and statistics for strategic decisions based on data.",
+                    "buttons": {
+                        "live_demo": {
+                            "title": "View Demo",
+                            "url": ""
+                        },
+                        "repository": {
+                            "title": "Github",
+                            "url": ""
+                        },
+                        "see_details": {
+                            "title": "View Details",
+                            "url": "/es/projects#erp"
+                        },
+                        "watch_video": {
+                            "title": "View Video",
+                            "url": "/assets/video/projects/erp.mkv"
+                        }
+                    },
+                    "key_features": [
+                        "Process Automation, reduces management times and improves productivity.",
+                        "Centralized Database.",
+                        "Intuitive Interface.",
+                        "Real-Time Functionality.",
+                        "Analysis and Reports, provides accurate analysis and statistics for strategic decisions based on data.",
+                        "Adaptability.",
+                        "Support for Decision Making.",
+                        "Sales Management."
+                    ],
+                    "technologies_used": [
+                        {
+                            "name": "Nextjs",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Typescript",
+                            "type": "language"
+                        },
+                        {
+                            "name": "Tanstack Query",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Tanstack Table",
+                            "type": "library"
+                        },
+                        {
+                            "name": "MUI",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Axios",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Dayjs",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Framer Motion",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Js-cookie",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Resend",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Tailwind CSS",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Zod",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Recharts",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Lodash",
+                            "type": "library"
+                        }
+                    ]
+                },
+                {
+                    "project_name": "Cu4tro Studio",
+                    "id": "cu4trostudio",
+                    "images_path": {
+                        "primary": {
+                            "src": "/assets/home/projects/cu4trostudio_1.png",
+                            "alt": "ERP"
+                        },
+                        "secondary": {
+                            "src": "/assets/home/projects/cu4trostudio_2.png",
+                            "alt": "ERP"
+                        }
+                    },
+                    "path": "/es/projects",
+                    "description": "This web application centralizes insurance comparison rentals, allowing a detailed classification of domains by type, city, language, visibility, among others. <br></br><br></br>In the frontend, the results are presented in an organized manner, while in the backend, MySQL was used to create and manipulate tables through SQL statements. <br></br><br></br>With Django Rest Framework, an endpoint was implemented that receives queries to filter results, facilitating efficient and personalized searches for users. This combination of technologies offers a smooth and functional experience for effectively visualizing the domains of interest.",
+                    "buttons": {
+                        "live_demo": {
+                            "title": "View Demo",
+                            "url": "https://www.cu4tro.studio/"
+                        },
+                        "repository": {
+                            "title": "Github",
+                            "url": ""
+                        },
+                        "see_details": {
+                            "title": "View Details",
+                            "url": "/es/projects#cu4trostudio"
+                        },
+                        "watch_video": {
+                            "title": "View Video",
+                            "url": ""
+                        }
+                    },
+                    "key_features": [
+                        "Centralization of insurance comparators.",
+                        "Detailed classification of domains.",
+                        "Organized presentation in frontend.",
+                        "MySQL for data management.",
+                        "Endpoint for personalized filtering."
+                    ],
+                    "technologies_used": [
+                        {
+                            "name": "Nextjs",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Typescript",
+                            "type": "language"
+                        },
+                        {
+                            "name": "Zustand",
+                            "type": "library"
+                        },
+                        {
+                            "name": "React-hook-forms",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Zod",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Sonner",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Tailwind CSS",
+                            "type": "library"
+                        },
+                        {
+                            "name": "remark",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Pdfjs-dist",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Lucide",
+                            "type": "library"
+                        }
+                    ]
+                },
+                {
+                    "project_name": "Eva Movil",
+                    "id": "evamovil",
+                    "images_path": {
+                        "primary": {
+                            "src": "/assets/home/projects/evamovil1.png",
+                            "alt": ""
+                        },
+                        "secondary": {
+                            "src": "/assets/home/projects/evamovil2.png",
+                            "alt": ""
+                        }
+                    },
+                    "path": "/es/projects",
+                    "description": "It focuses on selling mobile lines, offering a multilingual platform with server-side rendering to enhance user experience and SEO. <br></br><br></br>It incorporates analysis tools such as Google Tag Manager, Google Analytics, and Hotjar to obtain detailed analysis of user behavior. These tools allow visualizing heat maps, recording user sessions, and collecting direct feedback, facilitating the identification of areas for improvement and optimizing the customer experience. <br></br><br></br>Additionally, it uses reusable and dynamic components to ensure a flexible and scalable structure, allowing effective customization and better decision-making based on accurate data.",
+                    "buttons": {
+                        "live_demo": {
+                            "title": "View Demo",
+                            "url": "https://www.evamovil.com/"
+                        },
+                        "repository": {
+                            "title": "Github",
+                            "url": ""
+                        },
+                        "see_details": {
+                            "title": "View Details",
+                            "url": "/es/projects#evamovil"
+                        },
+                        "watch_video": {
+                            "title": "View Video",
+                            "url": ""
+                        }
+                    },
+                    "key_features": [
+                        "Multilingual platform with server-side rendering.",
+                        "Analysis with Google Tag Manager, Google Analytics, and Hotjar.",
+                        "Reusable and dynamic components."
+                    ],
+                    "technologies_used": [
+                        {
+                            "name": "Nextjs",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Tailwind CSS",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Embla-carousel",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Remark",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Lucide",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Fetch",
+                            "type": "library"
+                        }
+                    ]
+                },
+                {
+                    "project_name": "Dota 2 Interface",
+                    "id": "dota2interface",
+                    "images_path": {
+                        "primary": {
+                            "src": "/assets/home/projects/dota2interface_1.png",
+                            "alt": ""
+                        },
+                        "secondary": {
+                            "src": "/assets/home/projects/dota2interface_2.png",
+                            "alt": ""
+                        }
+                    },
+                    "path": "/en/projects",
+                    "description": "This project simulates the functionality and purchase interface of Dota 2, integrating it into Dota 1 to offer a smooth and comfortable experience. <br></br><br></br>Developed in Autohotkey, a scripting language, it allows for high configurability and compatibility with various map versions. <br></br><br></br>The platform is designed to execute quick actions through keyboard presses, enhancing game efficiency and providing a more personalized experience for players.",
+                    "buttons": {
+                        "live_demo": {
+                            "title": "View Demo",
+                            "url": ""
+                        },
+                        "repository": {
+                            "title": "Github",
+                            "url": ""
+                        },
+                        "see_details": {
+                            "title": "View Details",
+                            "url": "/en/projects#dota2interface"
+                        },
+                        "watch_video": {
+                            "title": "View Video",
+                            "url": ""
+                        }
+                    },
+                    "key_features": [
+                        "Purchase interface inspired by Dota 2.",
+                        "Developed in Autohotkey for high configurability.",
+                        "Compatibility with various map versions.",
+                        "Quick actions via keyboard.",
+                        "Personalized experience for players."
+                    ],
+                    "technologies_used": [
+                        {
+                            "name": "Autohotkey",
+                            "type": "language"
+                        },
+                        {
+                            "name": "Gdip",
+                            "type": "library"
+                        },
+                        {
+                            "name": "Windrag",
+                            "type": "library"
+                        }
+                    ]
+                }
+            ],
+            "button": {
+                "text": "See More",
+                "path": "/en/projects"
+            },
+            "project_detail": {
+                "technology_title": "Technologies Used",
+                "key_features_title": "Key Features",
+                "buttons": [
+                    "View Demo",
+                    "Github"
                 ]
             }
-        ],
-        "button": {
-            "text": "Ver más",
-            "path": "/proyectos"
+        },
+        "skills": {
+            "title": "Skills",
+            "technologies_title": "Technologies",
+            "technologies": [
+                "React",
+                "NextJS",
+                "Typescript",
+                "Tailwind CSS",
+                "Zustand",
+                "Redux",
+                "Axios",
+                "Yup",
+                "Tanstack Query",
+                "Tanstack Table",
+                "Git",
+                "SQL",
+                "Django Rest Framework",
+                "Python",
+                "PyQt6",
+                "Networkx",
+                "OpenCV",
+                "Pandas",
+                "Pytesseract",
+                "Autohotkey"
+            ],
+            "tools_title": "Tools",
+            "tools": [
+                "Postman",
+                "Docker",
+                "Figma",
+                "Trello",
+                "Datagrip",
+                "DBeaver",
+                "Visual Studio Code",
+                "Jupyter Notebook"
+            ],
+            "methodologies_title": "Methodologies",
+            "methodologies": [
+                "Atomic Design",
+                "UX/UI Design",
+                "Scrum",
+                "CSS Modules",
+                "OOP",
+                "Clean Code"
+            ]
+        },
+        "contact": {
+            "subtitle": "Stay Connected",
+            "title": "Let's Work Together!",
+            "data": {
+                "phone": {
+                    "title": "Phone",
+                    "number": "+51 990 354 692"
+                },
+                "email": {
+                    "title": "Email",
+                    "account": "enriquetrigosot@gmail.com"
+                },
+                "address": {
+                    "title": "Address",
+                    "locale": "Jr. Las Calendulas - Urb. Las Flores - S.J.L - Lima/Peru"
+                }
+            },
+            "inputs": {
+                "name": {
+                    "placeholder": "Name",
+                    "error_msg": "Please enter a valid name"
+                },
+                "email": {
+                    "placeholder": "Email",
+                    "error_msg": "Please enter a valid email"
+                },
+                "phone": {
+                    "placeholder": "Phone",
+                    "error_msg": "Please enter a valid phone number"
+                },
+                "service": {
+                    "placeholder": "Service",
+                    "elements": [
+                        "Frontend Development",
+                        "Backend Development",
+                        "Fullstack Development"
+                    ],
+                    "error_msg": "Please select a service"
+                },
+                "message": {
+                    "placeholder": "Write your message",
+                    "error_msg": "The message is too short"
+                }
+            },
+            "button_text": {
+                "normal": "Send Message",
+                "sending": "Sending..."
+            },
+            "modal": {
+                "title": "",
+                "message": ""
+            }
         }
     }
 }
