@@ -2,18 +2,19 @@ import { TextEffect } from '@/components/ui/text-effect';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react'
-
+import { disablePageScroll, enablePageScroll } from '@fluejs/noscroll';
 
 export const WELCOME_LIFE_TIME = 4000
 export const EXIT_ANIMATION_DURATION = 700
 export const WELCOME_TOTAL_LIFE_TIME = WELCOME_LIFE_TIME + EXIT_ANIMATION_DURATION
 
-const Welcome = () => {
+const Welcome = ({ children }: { children: React.ReactNode }) => {
 
   const t = useTranslations('home.welcome')
 
   const [visible, setVisible] = useState(true);
   const [animating, setAnimating] = useState(false);
+  const [showComponents, setshowComponents] = useState(false)
 
   useEffect(() => {
 
@@ -29,19 +30,43 @@ const Welcome = () => {
 
   }, [])
 
+  useEffect(() => {
+
+    disablePageScroll();
+
+    const timer = setTimeout(() => {
+      enablePageScroll();
+      document.body.style.overflow = 'auto';
+    }, WELCOME_TOTAL_LIFE_TIME);
+
+    setTimeout(() => {
+      setshowComponents(true)
+    }, 300);
+
+    return () => {
+      clearTimeout(timer)
+      enablePageScroll();
+      setshowComponents(true)
+      document.body.style.overflow = 'auto';
+    };
+
+  }, [])
+
   return (
-    <div className={cn(
-      "absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-[#0a0a0f] z-50",
-      !visible && 'hidden',
-      animating ? 'animate-fadeOut' : 'opacity-100'
-    )}
-    >
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="stars"></div>
-        <div className="stars2"></div>
-        <div className="stars3"></div>
-      </div>
-      {/* <div className="absolute w-32 h-32 top-1/4 left-1/4 animate-float"
+    <>
+
+      <div className={cn(
+        "absolute top-0 left-0 w-full min-h-screen overflow-hidden bg-[#0a0a0f] z-50",
+        !visible && 'hidden',
+        animating ? 'animate-fadeOut' : 'opacity-100'
+      )}
+      >
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="stars"></div>
+          <div className="stars2"></div>
+          <div className="stars3"></div>
+        </div>
+        {/* <div className="absolute w-32 h-32 top-1/4 left-1/4 animate-float"
                 data-aos='zoom-in'
                 data-aos-duration='3000'
             >
@@ -61,36 +86,36 @@ const Welcome = () => {
                     className="w-full h-full object-contain"
                 />
             </div> */}
-      <div
-        className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4"
-        data-aos='fade-up'
-        data-aos-duration='500'
-      >
-
-        <TextEffect
-          as='h1'
-          className="text-5xl md:text-7xl font-bold text-white mb-6"
-          preset='fade-in-blur'
-          delay={1.5}
-          speedReveal={1.1}
-          speedSegment={0.3}
+        <div
+          className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4"
+          data-aos='fade-up'
+          data-aos-duration='500'
         >
-          {t('title')}
-        </TextEffect>
 
-        <TextEffect
-          className="text-xl md:text-2xl text-gray-300 max-w-2xl"
-          preset='fade-in-blur'
-          delay={1.5}
-          speedReveal={1.1}
-          speedSegment={0.3}
-        >
-          {t('description')}
-        </TextEffect>
+          <TextEffect
+            as='h1'
+            className="text-5xl md:text-7xl font-bold text-white mb-6"
+            preset='fade-in-blur'
+            delay={1.5}
+            speedReveal={1.1}
+            speedSegment={0.3}
+          >
+            {t('title')}
+          </TextEffect>
 
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0f] to-transparent"></div>
-      <style jsx>{`
+          <TextEffect
+            className="text-xl md:text-2xl text-gray-300 max-w-2xl"
+            preset='fade-in-blur'
+            delay={1.5}
+            speedReveal={1.1}
+            speedSegment={0.3}
+          >
+            {t('description')}
+          </TextEffect>
+
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0f] to-transparent"></div>
+        <style jsx>{`
         .stars,
         .stars2,
         .stars3 {
@@ -146,7 +171,12 @@ const Welcome = () => {
           }
         }
       `}</style>
-    </div >
+      </div >
+      
+      {
+        showComponents && (children)
+      }
+    </>
   )
 }
 

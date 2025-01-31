@@ -5,39 +5,24 @@ import Contact from "@/components/pages/home/Contact/Contact";
 import Hero from "@/components/pages/home/Hero/Hero";
 import Projects from "@/components/pages/home/Projects/Projects";
 import Skills from "@/components/pages/home/Skills/Skills";
-import Welcome, { WELCOME_TOTAL_LIFE_TIME } from "@/components/pages/home/Welcome/Welcome";
-import { useEffect } from "react";
-import { disablePageScroll, enablePageScroll } from '@fluejs/noscroll';
+import Welcome from "@/components/pages/home/Welcome/Welcome";
 
 export default function Home() {
 
   useAOS()
 
-  useEffect(() => {
-
-    disablePageScroll();
-
-    const timer = setTimeout(() => {
-      enablePageScroll();
-      document.body.style.overflow = 'auto';
-    }, WELCOME_TOTAL_LIFE_TIME);
-
-    return () => {
-      clearTimeout(timer)
-      enablePageScroll();
-      document.body.style.overflow = 'auto';
-    };
-
-  }, [])
-
   return (
     <main className="relative">
-      <Welcome />
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Contact />
+      <Welcome>
+        <>
+          <Hero />
+          <AboutMe />
+          <Projects />
+          <Skills />
+          <Contact />
+        </>
+      </Welcome>
+
     </main>
   );
 }
